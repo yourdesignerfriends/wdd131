@@ -6,10 +6,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const copyrightElement = document.getElementById("copyright");
     
     if (copyrightElement) { 
-        copyrightElement.innerHTML = `\u00A9 ${currentYear} 🌺 ${author} 🌺 ${place}`;
+        copyrightElement.innerHTML = `\u00A9 ${currentYear} 🌈 ${author} 🌤️ ${place}`;
     }
     const modifiedElement = document.getElementById("lastModified");
     if (modifiedElement) {
-        modifiedElement.innerHTML = `Last Modified: ${lastModified}`;
+        modifiedElement.innerHTML = `Last Modified: ${lastModified} ⏰`;
     }
     });

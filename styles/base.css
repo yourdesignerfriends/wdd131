@@ -1,8 +1,8 @@
 :root {
-    /* Color Palette */
+    /* Color Palette https://coolors.co/fefae0-283618-419d78 */
     --primary-color: #fefae0;
     --secondary-color: #283618;
-    --accent1-color: #606c38;
+    --accent1-color: #419d78;
     /* fonts */
     --heading-font: "Playfair Display";
     --paragraph-font: "Montserrat, Helvetica, sans-serif";
@@ -16,13 +16,15 @@ h1 {
 p {
     font-family: var(--paragraph-font);
 }
+/* The global selector */
 * {
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 	box-sizing: border-box;
 }
 body {
     background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color); 
 }
 .container {
     text-align: center;
@@ -33,7 +35,6 @@ body {
 }
 nav {
     background-color: var(--primary-color);
-    margin: 0 auto;
 }
 nav ul {
     list-style-type: none;
@@ -54,4 +55,80 @@ nav a:hover {
 }
 nav ul li {
     flex: 1 1 100%;
+}
+
+main { 
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    max-width: 1000px; 
+    margin: 0 auto; 
+    padding: 20px 
+}
+.card { 
+    background-color: var(--primary-color); 
+    color: var(--secondary-color); 
+    padding: 20px; 
+    text-align: center; 
+    border-radius: 8px;
+    box-shadow: 0 4px 6px var(--accent1-color);
+    display: grid; 
+    grid-template-rows: auto 1fr auto; 
+    gap: 10px;
+    text-align: left;
+}
+.title { 
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 15px; 
+    border-radius: 8px 8px 0 0;
+    margin: -20px -20px 20px -20px;
+    text-align: center;
+}
+.cardcontent h2 { 
+    border-bottom: 3px solid var(--secondary-color); 
+    padding-bottom: 10px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center; 
+}
+.cardcontent { 
+    display: grid; 
+    gap: 20px; 
+} 
+.block, .block-reverse { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    align-items: center; 
+    gap: 20px; 
+} 
+.block img, .block-reverse img { 
+    width: 100%; 
+    border-radius: 8px;  
+    box-shadow: 0 4px 6px var(--accent1-color); 
+} 
+.block p, .block-reverse p { 
+    margin: 0; 
+} 
+.block-reverse { 
+    grid-template-columns: 1fr 1fr; 
+}
+
+footer {
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .block, .block-reverse { 
+        grid-template-columns: 1fr; 
+    } 
+    .block img, .block-reverse img { 
+        width: 100%;
+    }     
+    .title, .cardcontent h2 { 
+        width: 100%;  
+        margin: 0; 
+        padding: 10px; 
+    } 
+    .card { 
+        padding: 10px; 
+    } 
 }

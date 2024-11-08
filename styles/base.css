@@ -75,6 +75,7 @@ main {
     grid-template-rows: auto 1fr auto; 
     gap: 10px;
     text-align: left;
+    align-items: center;
 }
 .title { 
     background-color: var(--secondary-color);

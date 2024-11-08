@@ -24,7 +24,7 @@ p {
 }
 body {
     background-color: var(--primary-color);
-    border: 1px solid var(--secondary-color); 
+    border: 1px solid var(--secondary-color);
 }
 .container {
     text-align: center;
@@ -56,13 +56,13 @@ nav a:hover {
 nav ul li {
     flex: 1 1 100%;
 }
-
 main { 
     display: grid;
     grid-template-columns: 1fr 300px;
     max-width: 1000px; 
     margin: 0 auto; 
-    padding: 20px 
+    padding: 20px;
+    justify-content: center;
 }
 .card { 
     background-color: var(--primary-color); 

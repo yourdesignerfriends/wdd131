@@ -15,6 +15,7 @@ h1 {
 }
 p {
     font-family: var(--paragraph-font);
+    font-size: 1.2rem;
 }
 /* The global selector */
 * {
@@ -47,6 +48,7 @@ nav a {
     padding: 1rem;
     text-decoration: none;
     border: 5px solid var(--secondary-color);
+    font-size: 1.5rem;
 }
 nav a:hover {
     background-color: var(--secondary-color);
@@ -56,6 +58,11 @@ nav a:hover {
 nav ul li {
     flex: 1 1 100%;
 }
+
+ul li a {
+    font-size: 1.5rem;
+}
+
 main { 
     display: grid;
     grid-template-columns: 1fr 300px;
@@ -112,10 +119,15 @@ footer {
     text-align: center;
     background-color: var(--secondary-color);
     color: var(--primary-color);
-    padding: 10px 20px;
+    bottom: 0;
+    border-top: 1px var(--accent1-color);
+    position: relative;
+    padding: 20px;
+    box-shadow: 0 4px 6px var(--accent1-color);
 }
 footer p {  
-    padding: 5px 0; 
+    padding: 5px 0;
+    font-size: 1.2rem; 
 }
 @media (max-width: 768px) {
     .block, .block-reverse { 

@@ -86,7 +86,7 @@ main {
     text-align: center;
 }
 .cardcontent h2 { 
-    border-bottom: 3px solid var(--secondary-color); 
+    border-bottom: 1px solid var(--secondary-color); 
     padding-bottom: 10px;
     width: 80%;
     margin: 0 auto;

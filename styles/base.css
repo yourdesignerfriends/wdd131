@@ -60,7 +60,6 @@ main {
     display: grid;
     grid-template-columns: 1fr 300px;
     max-width: 1000px; 
-    margin: 0 auto; 
     padding: 20px;
     justify-content: center;
 }
@@ -89,7 +88,6 @@ main {
     border-bottom: 1px solid var(--secondary-color); 
     padding-bottom: 10px;
     width: 80%;
-    margin: 0 auto;
     text-align: center; 
 }
 .cardcontent { 
@@ -107,15 +105,17 @@ main {
     border-radius: 8px;  
     box-shadow: 0 4px 6px var(--accent1-color); 
 } 
-.block p, .block-reverse p { 
-    margin: 0; 
-} 
 .block-reverse { 
     grid-template-columns: 1fr 1fr; 
 }
-
 footer {
     text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 10px 20px;
+}
+footer p {  
+    padding: 5px 0; 
 }
 @media (max-width: 768px) {
     .block, .block-reverse { 

@@ -118,16 +118,20 @@ main {
     display: grid; 
     gap: 20px; 
 } 
-.block, .block-reverse { 
+.block, 
+.block-reverse { 
     display: grid; 
     grid-template-columns: 1fr 1fr; 
     align-items: center; 
     gap: 20px; 
 } 
-.block img, .block-reverse img { 
+.block img, 
+.block-reverse img { 
     width: 100%; 
     border-radius: 8px;  
-    box-shadow: 0 4px 6px var(--accent1-color); 
+    box-shadow: 0 4px 6px var(--accent1-color);
+    margin: 10px auto;
+    padding: 10px; 
 } 
 .block-reverse { 
     grid-template-columns: 1fr 1fr; 
@@ -163,18 +167,17 @@ footer p {
         width: 100%;
         text-align: center;
     }
-    .block, .block-reverse { 
-        grid-template-columns: 1fr; 
+    maiin {
+        display: block;
+    }
+    .block, 
+    .block-reverse { 
+        display: block;
     } 
-    .block img, .block-reverse img { 
+    .block img, 
+    .block-reverse img { 
         width: 100%;
+        margin: 10px auto;
+        padding: 10px;
     }     
-    .title, .cardcontent h2 { 
-        width: 100%;  
-        margin: 0; 
-        padding: 10px; 
-    } 
-    .card { 
-        padding: 10px; 
-    } 
 }

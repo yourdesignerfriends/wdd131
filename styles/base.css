@@ -4,8 +4,8 @@
     --secondary-color: #283618;
     --accent1-color: #419d78;
     /* fonts */
-    --heading-font: "Playfair Display";
-    --paragraph-font: "Montserrat, Helvetica, sans-serif";
+    --heading-font: 'Playfair Display';
+    --paragraph-font: 'Montserrat, Helvetica, sans-serif';
 }
 h1, h2 {
     font-family: var(--heading-font);

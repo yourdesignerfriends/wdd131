@@ -1,15 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
     const currentYear = new Date().getFullYear();
     const lastModified = document.lastModified;
-    const author = "Analina Del Vecchio"; 
+    const author = "Analina Del Vecchio Madriz"; 
     const place = "Washington, USA";
-    const copyrightElement = document.getElementById("copyright");
     
+    const copyrightElement = document.getElementById("copyright");
+    const modifiedElement = document.getElementById("lastmodified");
+
     if (copyrightElement) { 
-        copyrightElement.innerHTML = `\u00A9 ${currentYear} 🌈 ${author} 🌤️ ${place}`;
+        copyrightElement.textContent = `\u00A9 ${currentYear} 🌈 ${author} 🌤️ ${place}`;
     }
-    const modifiedElement = document.getElementById("lastModified");
     if (modifiedElement) {
-        modifiedElement.innerHTML = `Last Modified: ${lastModified} ⏰`;
+        modifiedElement.textContent = `Last Modified: ${lastModified} ⏰`;
     }
-    });
+});

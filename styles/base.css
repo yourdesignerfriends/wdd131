@@ -136,6 +136,7 @@ main {
     margin: 10px auto;
     padding: 10px; 
     height: auto;
+    max-width: 540px;
 } 
 .block-reverse { 
     grid-template-columns: 1fr 1fr; 

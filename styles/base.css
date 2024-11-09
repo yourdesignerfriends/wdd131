@@ -179,5 +179,12 @@ footer p {
         width: 100%;
         margin: 10px auto;
         padding: 10px;
-    }     
+    }
+    main {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+        box-sizing: border-box;
+    } 
 }

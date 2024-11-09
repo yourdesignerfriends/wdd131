@@ -132,6 +132,7 @@ main {
     box-shadow: 0 4px 6px var(--accent1-color);
     margin: 10px auto;
     padding: 10px; 
+    height: auto;
 } 
 .block-reverse { 
     grid-template-columns: 1fr 1fr; 
@@ -179,6 +180,7 @@ footer p {
         width: 100%;
         margin: 10px auto;
         padding: 10px;
+        height: auto;
     }
     main {
         display: block;

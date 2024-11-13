@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const place = "Washington, USA";
     
     const copyrightElement = document.getElementById("copyright");
-    const modifiedElement = document.getElementById("lastmodified");
+    const modifiedElement = document.getElementById("lastModified";
 
     if (copyrightElement) { 
         copyrightElement.textContent = `\u00A9 ${currentYear} 🌈 ${author} 🌤️ ${place}`;

@@ -11,6 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
         copyrightElement.textContent = `\u00A9 ${currentYear} 🌈 ${author} 🌤️ ${place}`; 
         } 
     if (modifiedElement) { 
-        modifiedElement.textContent = `Última modificación: ${lastModified} ⏰`; 
+        modifiedElement.textContent = `Last modification: ${lastModified} ⏰`; 
         } 
     });

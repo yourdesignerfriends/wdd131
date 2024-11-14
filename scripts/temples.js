@@ -1,31 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     /* ------------- During the learning activities I learned more about loops. I will try to apply it here -------------*/
-    const container = document.getElementById('temple-container');
-    const templeData = [
-        {
-            src: "images/seattle-washington-temple.webp",
-            alt: "Seattle Washington Temple",
-            caption: "Seattle Washington Temple",
-        },
-    ];
-
-    const createFigure = (data) => {
-        const figure = document.createElement('figure');
-        const img = document.createElement('img');
-        img.src = data.src;
-        img.alt = data.alt;
-
-        const figcaption = document.createElement('figcaption');
-        figcaption.textContent = data.caption;
-
-        figure.appendChild(img);
-        figure.appendChild(figcaption);
-        container.appendChild(figure);
-    };
-
-    for (let i = 0; i < 9; i++) {
-        templeData.forEach(createFigure);
-    }
+    
 
     const menuLinks = document.querySelectorAll('.menu-link');
     const mainHeading = document.getElementById('main-heading');

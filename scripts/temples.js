@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
     ];
     // I'll use a for loop to repeat the image 10 times.
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 9; i++) {
         templeData.forEach(data => {
             const figure = document.createElement('figure');
             const img = document.createElement('img');

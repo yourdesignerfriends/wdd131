@@ -30,10 +30,16 @@ p {
     padding: 10px;
     max-width: 100%;
     margin: 10px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px var(--accent1-color);
 }
 
 /* ------------- Image -------------*/
-image {
+img {
     width: 100%; 
     border-radius: 8px;  
     box-shadow: 0 4px 6px var(--accent1-color);
@@ -49,11 +55,33 @@ header {
     align-items: center;
     padding: 0 20px;
     background-color: var(--secondary-color);
-    max-width: 1200px;
     color: var(--primary-color);
+    height: 100px;
+    margin: 0 auto;
 }
 header h1 {
     margin: 0;
+}
+
+/* ------------- Main -------------*/
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h1 {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
 }
 /* ------------- Navigation -------------*/
 .navigation {
@@ -61,7 +89,9 @@ header h1 {
     flex-grow: 1;
     justify-content: flex-end;
     list-style: none;
-    margin-left: auto;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
 }
 
 .navigation li {
@@ -86,7 +116,6 @@ nav ul {
     margin: 0;
     padding: 0;
 }
-
 
 nav ul li {
     flex: 1 1 100%;

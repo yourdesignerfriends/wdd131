@@ -1,0 +1,47 @@
+@media screen and (min-width: 500px) {
+
+    /* ------------- Header -------------*/
+    header {
+        padding: 0 20px;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+
+    /* ------------- hamburger menu button -------------*/
+    .hamburger {
+        display: none;
+    }
+
+    /* ------------- Navigation -------------*/
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .navigation li {
+        margin-left: 15px;
+    }
+    .navigation a {
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+
+    /* ------------- Main -------------*/
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px;
+    }
+
+    /* ------------- Container -------------*/
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    /* ------------- Footer -------------*/
+    footer {
+        font-size: 1.2 rem;
+    }
+    
+}

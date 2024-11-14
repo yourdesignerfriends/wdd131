@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    /* ------------- During the learning activities I learned more about loops. I will try to apply it here -------------*/
     const container = document.getElementById('temple-container');
     const templeData = [
         {
@@ -7,21 +8,23 @@ document.addEventListener('DOMContentLoaded', () => {
             caption: "Seattle Washington Temple",
         },
     ];
-    
+
+    const createFigure = (data) => {
+        const figure = document.createElement('figure');
+        const img = document.createElement('img');
+        img.src = data.src;
+        img.alt = data.alt;
+
+        const figcaption = document.createElement('figcaption');
+        figcaption.textContent = data.caption;
+
+        figure.appendChild(img);
+        figure.appendChild(figcaption);
+        container.appendChild(figure);
+    };
+
     for (let i = 0; i < 9; i++) {
-        templeData.forEach(data => {
-            const figure = document.createElement('figure');
-            const img = document.createElement('img');
-            img.src = data.src;
-            img.alt = data.alt;
-
-            const figcaption = document.createElement('figcaption');
-            figcaption.textContent = data.caption;
-
-            figure.appendChild(img);
-            figure.appendChild(figcaption);
-            container.appendChild(figure);
-        });
+        templeData.forEach(createFigure);
     }
 
     const menuLinks = document.querySelectorAll('.menu-link');
@@ -34,13 +37,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    /* ------------- hamburger menu button -------------*/
     const hamButton = document.querySelector('#menu');
     const navigation = document.querySelector('.navigation');
 
+    const toggleMenu = () => {
+        navigation.classList.toggle('open');
+        hamButton.classList.toggle('open');
+    };
+
     if (hamButton) {
-        hamButton.addEventListener('click', () => {
-            navigation.classList.toggle('open');
-            hamButton.classList.toggle('open');
-        });
+        hamButton.addEventListener('click', toggleMenu);
     }
 });

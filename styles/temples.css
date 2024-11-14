@@ -125,6 +125,14 @@ nav ul li:not(:last-child) {
     margin-right: 15px;
 }
 
+/* ------------- hamburger menu button -------------*/
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
 /* ------------- Footer -------------*/
 footer {
     text-align: center;

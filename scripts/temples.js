@@ -36,13 +36,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // And here is the js for the hamburger 🍔 menu.
-    const mainnav = document.querySelector('.navigation')
-    const hambutton = document.querySelector('#menu');
+    const hamButton = document.querySelector('#menu');
+    const navigation = document.querySelector('.navigation');
 
-    if (hambutton) {
-        hambutton.addEventListener('click', () => {
-            mainnav.classList.toggle('show');
-            hambutton.classList.toggle('show');
+    if (hamButton) {
+        hamButton.addEventListener('click', () => {
+            navigation.classList.toggle('open');
+            hamButton.classList.toggle('open');
         });
     }
 });

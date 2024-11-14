@@ -18,7 +18,7 @@ body {
     font-family: var(--paragraph-font);
 }
 
-/* ------------- Typography ---------------------*/
+/* ------------- Typography -------------*/
 h1 {
     font-family: var(--heading-font);
     font-size: 2rem;
@@ -32,7 +32,7 @@ p {
     margin: 10px 0;
 }
 
-/* ----------- Image --------------------*/
+/* ------------- Image -------------*/
 image {
     width: 100%; 
     border-radius: 8px;  
@@ -42,30 +42,72 @@ image {
     height: auto;
 }
 
-/* -------------- Header ------------------*/
+/* ------------- Header -------------*/
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+    background-color: var(--secondary-color);
+    max-width: 1200px;
+    color: var(--primary-color);
 }
 header h1 {
     margin: 0;
 }
-header nav {
+/* ------------- Navigation -------------*/
+.navigation {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    list-style: none;
     margin-left: auto;
 }
 
-/* --------- Navigation -------------*/
-.navigation {
+.navigation li {
+margin-left: 15px;
+}
+
+.navigation a {
+    display: block;
+    color: var(--primary-color);
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: background-color 0.7s ease, color 0.7s ease;
+}
+.navigation a:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+nav ul {
+    list-style-type: none;
     display: flex;
-    list-style: none;
     margin: 0;
     padding: 0;
 }
-.navigation li {
-    margin-left: 15px;
+
+
+nav ul li {
+    flex: 1 1 100%;
 }
-.navigation a {
-    text-decoration: none;
+
+nav ul li:not(:last-child) {
+    margin-right: 15px;
+}
+
+/* ------------- Footer -------------*/
+footer {
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    bottom: 0;
+    border-top: 1px var(--accent1-color);
+    position: relative;
+    padding: 20px;
+    box-shadow: 0 4px 6px var(--accent1-color);
+}
+footer p {  
+    padding: 5px 0;
+    font-size: 1.2rem; 
 }

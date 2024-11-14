@@ -30,6 +30,8 @@ body {
     background-color: var(--primary-color);
     border: 1px solid var(--secondary-color);
 }
+
+/* ------------- Navigation -------------*/
 .container {
     text-align: center;
     align-content: center;
@@ -62,6 +64,8 @@ nav a:hover {
 nav ul li {
     flex: 1 1 100%;
 }
+
+/* ------------- Card -------------*/
 .card ul {
     list-style-type: none;
 }
@@ -140,6 +144,8 @@ main {
 .block-reverse { 
     grid-template-columns: 1fr 1fr; 
 }
+
+/* ------------- Footer -------------*/
 footer {
     text-align: center;
     background-color: var(--secondary-color);

@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // This is the js to update the header in main when a link is clicked.
     const menuLinks = document.querySelectorAll('.menu-link');
     const mainHeading = document.getElementById('main-heading');
 
@@ -33,4 +34,15 @@ document.addEventListener('DOMContentLoaded', () => {
         mainHeading.textContent = event.target.textContent;
         });
     });
+
+    // And here is the js for the hamburger 🍔 menu.
+    const mainnav = document.querySelector('.navigation')
+    const hambutton = document.querySelector('#menu');
+
+    if (hambutton) {
+        hambutton.addEventListener('click', () => {
+            mainnav.classList.toggle('show');
+            hambutton.classList.toggle('show');
+        });
+    }
 });

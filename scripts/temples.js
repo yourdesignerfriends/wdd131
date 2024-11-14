@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     /* ------------- hamburger menu button -------------*/
-    const hamButton = document.querySelector('#menu');
+    /*const hamButton = document.querySelector('#menu');
     const navigation = document.querySelector('.navigation');
 
     const toggleMenu = () => {
@@ -48,5 +48,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (hamButton) {
         hamButton.addEventListener('click', toggleMenu);
-    }
+    }*/
+    const hamButton = document.querySelector('#menu');
+    const navigation = document.querySelector('.navigation');
+
+    hamButton.addEventListener('click', () => {
+        navigation.classList.toggle('open');
+        hamButton.classList.toggle('open');
+    });
 });

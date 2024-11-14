@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
             caption: "Seattle Washington Temple",
         },
     ];
-    // I'll use a for loop to repeat the image 10 times.
+    
     for (let i = 0; i < 9; i++) {
         templeData.forEach(data => {
             const figure = document.createElement('figure');
@@ -24,18 +24,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // This is the js to update the header in main when a link is clicked.
     const menuLinks = document.querySelectorAll('.menu-link');
     const mainHeading = document.getElementById('main-heading');
 
     menuLinks.forEach(link => {
         link.addEventListener('click', (event) => {
-        event.preventDefault();
-        mainHeading.textContent = event.target.textContent;
+            event.preventDefault();
+            mainHeading.textContent = event.target.textContent;
         });
     });
 
-    // And here is the js for the hamburger 🍔 menu.
     const hamButton = document.querySelector('#menu');
     const navigation = document.querySelector('.navigation');
 

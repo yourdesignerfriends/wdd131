@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    /* ------------- Navigation -------------*/
     const menuLinks = document.querySelectorAll('.menu-link');
     const mainHeading = document.getElementById('main-heading');
 

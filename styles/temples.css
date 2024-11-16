@@ -56,13 +56,27 @@ header h1 {
 }
 /* ------------- hamburger menu button -------------*/
 #menu {
-	font-size: 1.5rem;
-	border: 0;
-	background: none;
-	color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 50%;
+    padding: 0px;
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+	font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    justify-content: center;
+    
 	position: absolute;
 	top: 1rem;
 	right: 1rem;
+}
+#menu:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transform: scale(1.1);
 }
 #menu::before {
 	content: "☰";

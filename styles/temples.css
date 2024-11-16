@@ -127,7 +127,11 @@ img {
     padding: 10px; 
     height: auto;
 }
-
+figcaption {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-top: 10px;
+}
 
 /* ------------- Footer -------------*/
 footer {

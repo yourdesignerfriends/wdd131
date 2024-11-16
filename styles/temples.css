@@ -31,7 +31,7 @@ header {
     background-color: var(--secondary-color);
 }
 header h1 {
-    padding: 2rem;
+    padding: 1.5rem;
     font-size: 1.5rem;
     color: var(--primary-color);
 }
@@ -63,12 +63,11 @@ header h1 {
     padding: 0px;
     width: 50px;
     height: 50px;
-    font-size: 2rem;
+    font-size: 1.5rem;
 	font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
     justify-content: center;
-    
 	position: absolute;
 	top: 1rem;
 	right: 1rem;
@@ -79,7 +78,7 @@ header h1 {
     transform: scale(1.1);
 }
 #menu::before {
-	content: "☰";
+	content: "\2630";
 }
 #menu.open::before {
 	content: "X";
@@ -98,7 +97,7 @@ main {
 
 main h1 {
     margin: 0;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 
 /* ------------- Container for the temple pictures -------------*/

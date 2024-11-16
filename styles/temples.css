@@ -28,12 +28,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
     background-color: var(--secondary-color);
     color: var(--primary-color);
 }
 header h1 {
-    margin: 0;
+    padding: 10px;
     font-size: 1.5rem;
 }
 

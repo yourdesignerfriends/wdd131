@@ -12,15 +12,12 @@
 	.navigation {
 		flex-direction: row;
 	}
-
 	.navigation a {
 		display: block;
-		flex: 1 1 100%;
 	}
 
     /* ------------- Main -------------*/
     main {
         max-width: 1200px;
-        padding: 40px;
     }  
 }

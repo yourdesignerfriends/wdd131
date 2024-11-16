@@ -8,6 +8,11 @@
     --heading-font: 'Lato', sans-serif;
     --paragraph-font: 'Lato', sans-serif;
 }
+* {
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+}
 
 /* ------------- Body -------------*/
 body h1 p, ul li {
@@ -16,12 +21,10 @@ body h1 p, ul li {
     box-sizing: border-box;
 }
 body {
-    margin: 0 auto;
     font-family: var(--paragraph-font);
     background-color: var(--primary-color);
     color: var(--secondary-color);
 }
-
 
 /* ------------- Header -------------*/
 header {

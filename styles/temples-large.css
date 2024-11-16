@@ -1,4 +1,5 @@
 @media screen and (min-width: 500px) {
+    /* ------------- Header -------------*/
     header {
         display: flex;
     }
@@ -13,7 +14,6 @@
 	.navigation a {
 		display: block;
 	}
-
     /* ------------- Main -------------*/
     main {
         max-width: 1200px;

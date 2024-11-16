@@ -1,9 +1,7 @@
 @media screen and (min-width: 800px) {
     header {
         display: flex;
-        justify-content: space-between;
     }
-    
     /* ------------- hamburger menu button Hidden -------------*/
     #menu {
 		display: none;

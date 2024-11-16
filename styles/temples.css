@@ -54,6 +54,7 @@ header h1 {
 	background-color: var(--secondary-color);
 	color: var(--primary-color);
 }
+
 /* ------------- hamburger menu button -------------*/
 #menu {
     background-color: var(--primary-color);
@@ -83,10 +84,12 @@ header h1 {
 #menu.open::before {
 	content: "X";
 }
-.open a {
-	display: block;
+.navigation.open a {
+    display: block;
 }
-
+.hidden {
+    display: none;
+}
 /* ------------- Main -------------*/
 main {
     padding: 20px;

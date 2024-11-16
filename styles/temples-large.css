@@ -18,25 +18,14 @@
 		flex: 1 1 100%;
 	}
 
-	.stuff {
-		margin: 1rem auto;
-	}
-
     /* ------------- Main -------------*/
     main {
         max-width: 1200px;
-        margin: 0 auto;
         padding: 40px;
     }
 
     /* ------------- Container -------------*/
     .container {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-
-    /* ------------- Footer -------------*/
-    footer {
-        font-size: 1.2rem;
-    }
-    
+    }   
 }

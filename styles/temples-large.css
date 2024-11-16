@@ -22,10 +22,5 @@
     main {
         max-width: 1200px;
         padding: 40px;
-    }
-
-    /* ------------- Container -------------*/
-    .container {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }   
+    }  
 }

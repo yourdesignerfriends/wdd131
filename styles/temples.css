@@ -31,7 +31,7 @@ header {
     background-color: var(--secondary-color);
 }
 header h1 {
-    padding: 20px;
+    padding: 2rem;
     font-size: 1.5rem;
     color: var(--primary-color);
 }
@@ -59,7 +59,7 @@ header h1 {
 .navigation {
 	display: flex;
 	flex-direction: column;
-    padding: 1rem;
+    padding: 2rem;
     text-align: center;
 }
 .navigation a {

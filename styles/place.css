@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 :root {
-    /* Color Palette from https://coolors.co/fefae0-283618-419d78 */
-    --primary-color: #fefae0;
-    --secondary-color: #283618;
-    --accent1-color: #419d78;
+    /* Color Palette from https://coolors.co/ffcc00-00247d-cf142b-ffffff-000000 */
+    --primary-color: #ffffff;
+    --secondary-color: #000000;
+    --accent1-color: #ffcc00;
+    --accent2-color: #00247d;
+    --accent3-color: #cf142b;
     /* fonts */
     --heading-font: 'Lato', sans-serif;
     --paragraph-font: 'Lato', sans-serif;

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+:root {
+    /* Color Palette from https://coolors.co/fefae0-283618-419d78 */
+    --primary-color: #fefae0;
+    --secondary-color: #283618;
+    --accent1-color: #419d78;
+    /* fonts */
+    --heading-font: 'Lato', sans-serif;
+    --paragraph-font: 'Lato', sans-serif;
+}
+* {
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* ------------- Body -------------*/
+body h1 p, ul li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--paragraph-font);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}

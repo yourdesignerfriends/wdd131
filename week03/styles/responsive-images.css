@@ -29,4 +29,14 @@ body {
     width: 100%;
     height: auto;
 }
+header {
+    display: block;
+    text-align: center;
+    background-color: var(--secondary-color);
+}
+header h1 {
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
   

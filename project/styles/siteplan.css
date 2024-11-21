@@ -109,3 +109,11 @@ nav a:hover {
   background-color: var(--primary-color);
   border: 1px solid var(--secondary-color);
 }
+
+/* ------------- Image -------------*/
+img {
+    width: 100%; 
+    margin: 10px auto;
+    padding: 10px; 
+    height: auto;
+}

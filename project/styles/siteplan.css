@@ -78,20 +78,18 @@ th, td {
 }
 
 /* ---------- Navigation ----------*/
-nav {
-  background-color: var(--secondary-color);
-  line-height: 3em;
-  border: 1px solid var(--secondary-color);
-}
 nav  {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
+  background-color: var(--secondary-color);
+  line-height: 3em;
 }
 nav a {
   text-decoration: none;
   padding: 10px;
   flex-grow: 1;
+  border: 1px solid var(--primary-color);
 }
 nav a {
   color: var(--primary-color);
@@ -99,8 +97,10 @@ nav a {
 nav a:hover {
   color: var(--secondary-color);
   background-color: var(--primary-color);
+  border: 1px solid var(--secondary-color);
 }
 
+/* ---------- Sitemap ----------*/
 .sitemap {
   display: grid;
   justify-content: center;
@@ -117,22 +117,22 @@ nav a:hover {
   text-align: center;
 }
 .sm-home {
-  grid-area: home;
-  background-color: var(--secondary-color);
-  line-height: 3em;
-  color: var(--primary-color);
+    grid-area: home;
+    background-color: var(--secondary-color);
+    line-height: 3em;
+    color: var(--primary-color);
 }
 .sm-page2 {
-  grid-area: page2;
-  background-color: var(--secondary-color);
-  line-height: 3em;
-  color: var(--primary-color);
+    grid-area: page2;
+    background-color: var(--secondary-color);
+    line-height: 3em;
+    color: var(--primary-color);
 }
 .sm-page3 {
-  grid-area: page3;
-  background-color: var(--secondary-color);
-  line-height: 3em;
-  color: var(--primary-color);
+    grid-area: page3;
+    background-color: var(--secondary-color);
+    line-height: 3em;
+    color: var(--primary-color);
 }
 .top {
   grid-area: top;
@@ -147,8 +147,4 @@ nav a:hover {
   grid-area: right;
   border-top: 1px solid;
   border-right: 1px solid;
-}
-
-.historia {
-  text-align: left;
 }

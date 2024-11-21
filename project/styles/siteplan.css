@@ -32,15 +32,6 @@ h3 {
 p {
     font-size: 1.2rem;
 }
-/* Section */
-section {
-    padding: 20px;
-    background-color: var(--primary-color);
-    margin-bottom: 20px;
-}
-section p {
-    text-align: left;
-}
 /* Body */
 body {
     font-family: var(--font-secondary);
@@ -55,9 +46,19 @@ body {
     );
     font-size: 1.2rem;
 }
+/* Section */
+section {
+    padding: 20px;
+    background-color: var(--primary-color);
+    margin-bottom: 20px;
+}
+section p {
+    text-align: left;
+    padding-left: 2em;
+}
+/* Scenarios */
 .scenarios ul {
-    padding-left: 20px;
-
+    padding-left: 30px;
 }
 /* Color table */
 main table {
@@ -89,10 +90,10 @@ th, td {
 }
 /* Colored paragraph */
 .colored-1 {
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-  padding: 10px;
-  margin: 10px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 10px;
+    margin: 10px;
 }
 .colored-2 {
     background-color: var(--accent1-color);
@@ -107,31 +108,32 @@ th, td {
     margin: 10px;
 }
 
-/* ---------- Navigation ----------*/
+/* Navigation */
 nav  {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-  background-color: var(--secondary-color);
-  line-height: 3em;
-  flex-direction: column;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--secondary-color);
+    line-height: 3em;
+    flex-direction: column;
 }
 nav a {
-  text-decoration: none;
-  padding: 10px;
-  width: 100%;
-  border: 1px solid var(--primary-color);
+    text-decoration: none;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid var(--primary-color);
+    text-align: center;
 }
 nav a {
-  color: var(--primary-color);
+    color: var(--primary-color);
 }
 nav a:hover {
-  color: var(--secondary-color);
-  background-color: var(--primary-color);
-  border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
 }
 
-/* ------------- Image -------------*/
+/* Image */
 img {
     display: block;
     width: 100%;

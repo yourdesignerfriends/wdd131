@@ -35,7 +35,6 @@ p {
 /* Section */
 section {
     padding: 20px;
-    text-align: center;
     background-color: var(--primary-color);
     margin-bottom: 20px;
 }

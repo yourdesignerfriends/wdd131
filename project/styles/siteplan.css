@@ -1,134 +1,106 @@
-/* Google fonts */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Playfair+Display&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
 :root {
-  /* Colors Palette */
-  --primary-color: #ffffff;
-  --secondary-color: #000000;
-  --accent1-color: #ebbfd7;
-  --accent2-color: #fbf0a4;
-  --accent3-color: #c4edb3;
-  --accent4-color: #a5deff;
-  --heading-font: "Playfair Display";
-  --paragraph-font: "Montserrat, Helvetica, sans-serif";
-  /* font */
-  --heading-font: "Playfair Display";
-  --paragraph-font: "Montserrat, Helvetica, sans-serif";
-  /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: var(--secondary-color); /* headlines on a white background */ 
-  --headline-color-on-color: var(--secondary-color); /* headlines on a colored background */ 
-  --paragraph-color-on-white: var(--secondary-color); /* paragraph text on a white background */ 
-  --paragraph-color-on-color: var(--primary-color); /* paragraph text on a colored background */ 
-  --paragraph-background-color: var(--secondary-color);
-  --nav-link-color: var(--primary-color);
-  --nav-background-color: var(--secondary-color);
-  --nav-hover-link-color: var(--secondary-color);
-  --nav-hover-background-color: var(--primary-color);
+    /* Color Palette from https://coolors.co/000000-ffffff-5c75ca-f3c16b */
+    --primary-color: #ffffff;
+    --secondary-color: #000000;
+    --accent1-color: #5c75ca;
+    --accent2-color: #f3c16b;
+    /* Fonts */
+    --font-primary: 'Oswald', sans-serif; 
+    --font-secondary: 'Open Sans', sans-serif;
 }
+* {
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+}
+h2, h3 { 
+    font-family: var(--font-primary); 
+    margin-bottom: 20px;
+}
+h1 {
+    font-family: var(--font-primary);
+    text-transform: uppercase;
+}
+
+section {
+    padding: 1em;
+    text-align: center;
+    background-color: var(--primary-color);
+    margin-bottom: 20px;
+}
+/* ---------- Body ----------*/
 body {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 4em;
-  font-size: 18px;
-  text-align: center;
-  color: var(--secondary-color);
-  background-image: linear-gradient(90deg, var(--accent1-color), var(--accent2-color), var(--accent3-color), var(--accent4-color));
+    font-family: var(--font-secondary);
+    max-width: 1200px;
+    padding: 4em;
+    background-image: repeating-linear-gradient(
+        90deg, 
+        var(--secondary-color) 0%, 
+        var(--secondary-color) 50%, 
+        var(--accent2-color) 50%, 
+        var(--accent2-color) 100%
+    );
 }
-img {
-  display: block;
-  margin: 0 auto;
-  max-width: 300px;
+/* ---------- Color table ----------*/
+main table {
+    width: 100%;
+    min-width: 350px;
+    margin: 20px 0;
+    background-color: var(--primary-color);
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--heading-font);
-  color: var(--headline-color-on-white);
-}
-h2 {
-  text-align: center;
-}
-hr {
-  height: 3px;
-  margin: 35px 0;
-  background: var(--secondary-color);
-}
-/* Titulo de la pagina */
-header {
-  padding: 1em;
-  text-align: center;
-  color: var(--headline-color-on-color);
-  background-color: var(--nav-link-color);
-}
-header > h1, header > h2 {
-  color: var(--headline-color-on-color);
-}
-p {
-  font-family: var(--paragraph-font);
-  color: var(--paragraph-color-on-white);
-  padding: 1em;
-}
-/* Table of colors */
-.colors {
-  width: 100%;
-  min-width: 350px;
-  margin: 30px auto;
-  text-align: center;
-}
-/* Color de relleno*/
-.colors th {
-  background-color: #ffffff;
-}
-/* Size */
-.colors td{
-  width: 10%;
-  height: 3em;
-}
-/* Lista de colores */
+th, td { 
+    border: 1px solid var(--secondary-color); 
+    text-align: center; 
+    padding: 8px;
+    font-family: var(--font-primary); 
+} 
 .primary {
-  background-color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 .secondary {
-  background-color: var(--secondary-color);
-  color: #ffffff;
+    background-color: var(--secondary-color);
+    color: var(--primary-color)
 }
 .accent1 {
-  background-color: var(--accent1-color);
+    background-color: var(--accent1-color);
 }
 .accent2 {
-  background-color: var(--accent2-color);
+    background-color: var(--accent2-color);
 }
-.accent3 {
-  background-color: var(--accent3-color);
+
+/* ---------- Colored paragraph ----------*/
+.colored {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 10px;
 }
-.accent4 {
-  background-color: var(--accent4-color);
-}
-/* Color del parrafo */
-p.colored {
-  background-color: var(--paragraph-background-color);
-  color: var(--paragraph-color-on-color);
-}
+
+/* ---------- Navigation ----------*/
 nav {
-  background-color: var(--nav-background-color);
+  background-color: var(--secondary-color);
   line-height: 3em;
-  text-align: center;
-  font-size: 1.2em;
+  border: 1px solid var(--secondary-color);
 }
 nav  {
   list-style-type: none;
   display: flex;
+  justify-content: space-between;
 }
 nav a {
-  padding:1em;
-  min-width: 120px;
   text-decoration: none;
   padding: 10px;
+  flex-grow: 1;
 }
-nav a:link, nav a:visited {
-  color: var(--nav-link-color);
+nav a {
+  color: var(--primary-color);
 }
 nav a:hover {
-  color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-background-color);
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
+
 .sitemap {
   display: grid;
   justify-content: center;
@@ -176,58 +148,7 @@ nav a:hover {
   border-top: 1px solid;
   border-right: 1px solid;
 }
-section {
-  padding: 1em;
-  text-align: center;
-  background-color: var(--primary-color);
-}
-.fa:hover {
-  opacity: 0.7;
-} 
-.fa-facebook {
-  background: var(--secondary-color);
-  color: var(--primary-color);
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-  margin: 10px;
-}
-.fa-linkedin {
-  background: var(--secondary-color);
-  color: var(--primary-color);
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-  margin: 10px;
-}  
-.fa-youtube {
-  background: var(--secondary-color);
-  color: var(--primary-color);
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-  margin: 10px;
-} 
-.fa-instagram {
-  background: var(--secondary-color);
-  color: var(--primary-color);
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-  margin: 10px;
-}
+
 .historia {
   text-align: left;
 }

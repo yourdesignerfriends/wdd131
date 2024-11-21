@@ -114,11 +114,12 @@ nav  {
   justify-content: space-between;
   background-color: var(--secondary-color);
   line-height: 3em;
+  flex-direction: column;
 }
 nav a {
   text-decoration: none;
   padding: 10px;
-  flex-grow: 1;
+  width: 100%;
   border: 1px solid var(--primary-color);
 }
 nav a {

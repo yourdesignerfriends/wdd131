@@ -32,14 +32,17 @@ h3 {
 p {
     font-size: 1rem;
 }
-
+/* Section */
 section {
     padding: 20px;
     text-align: center;
     background-color: var(--primary-color);
     margin-bottom: 20px;
 }
-/* ---------- Body ----------*/
+section p {
+    text-align: left;
+}
+/* Body */
 body {
     font-family: var(--font-secondary);
     max-width: 1200px;
@@ -52,7 +55,11 @@ body {
         var(--accent2-color) 100%
     );
 }
-/* ---------- Color table ----------*/
+.scenarios ul {
+    padding-left: 20px;
+
+}
+/* Color table */
 main table {
     width: 100%;
     min-width: 350px;
@@ -75,16 +82,29 @@ th, td {
 }
 .accent1 {
     background-color: var(--accent1-color);
+    color: var(--primary-color);
 }
 .accent2 {
     background-color: var(--accent2-color);
 }
-
-/* ---------- Colored paragraph ----------*/
-.colored {
+/* Colored paragraph */
+.colored-1 {
   background-color: var(--secondary-color);
   color: var(--primary-color);
   padding: 10px;
+  margin: 10px;
+}
+.colored-2 {
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    padding: 10px;
+    margin: 10px;
+}
+.colored-3 {
+    background-color: var(--accent2-color);
+    color: var(--secondary-color);
+    padding: 10px;
+    margin: 10px;
 }
 
 /* ---------- Navigation ----------*/

@@ -134,8 +134,13 @@ nav a:hover {
 
 /* ------------- Image -------------*/
 img {
-    width: 70%; 
-    margin: 10px auto;
-    padding: 10px; 
+    display: block;
+    width: 100%;
+    max-width: 200px;
     height: auto;
+}
+.container {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
 }

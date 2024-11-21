@@ -17,14 +17,19 @@
 h2, h3 { 
     font-family: var(--font-primary); 
     margin-bottom: 20px;
+    font-size: 1.2;
 }
 h1 {
     font-family: var(--font-primary);
     text-transform: uppercase;
+    font-size: 1.5;
+}
+p {
+    font-size: 1;
 }
 
 section {
-    padding: 1em;
+    padding: 20px;
     text-align: center;
     background-color: var(--primary-color);
     margin-bottom: 20px;

@@ -59,33 +59,40 @@ section p {
 .scenarios ul {
     padding-left: 30px;
 }
-/* Color table */
-main table {
-    width: 100%;
-    min-width: 350px;
-    margin: 20px 0;
-    background-color: var(--primary-color);
+/* Color Schema */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  width: 100%;
+  margin: 20px 0;
 }
-th, td { 
-    border: 1px solid var(--secondary-color); 
-    text-align: center; 
-    padding: 8px;
-    font-family: var(--font-primary); 
-} 
+.grid-item {
+  border: 1px solid var(--secondary-color);
+  padding: 15px;
+  font-family: var(--font-primary);
+  text-align: left;
+  position: relative;
+}
+/* Specific color styles */
 .primary {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
+
 .secondary {
-    background-color: var(--secondary-color);
-    color: var(--primary-color)
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
+
 .accent1 {
-    background-color: var(--accent1-color);
-    color: var(--primary-color);
+  background-color: var(--accent1-color);
+  color: var(--primary-color);
 }
+
 .accent2 {
-    background-color: var(--accent2-color);
+  background-color: var(--accent2-color);
+  color: var(--primary-color);
 }
 /* Colored paragraph */
 .colored-1 {

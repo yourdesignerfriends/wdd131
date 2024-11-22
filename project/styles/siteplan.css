@@ -102,12 +102,12 @@ section p {
 
 .accent1 {
   background-color: var(--accent1-color);
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .accent2 {
   background-color: var(--accent2-color);
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 /* Colored paragraph */
 .colored-1 {

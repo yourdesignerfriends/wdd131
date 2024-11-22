@@ -118,7 +118,7 @@ section p {
 }
 .colored-2 {
     background-color: var(--accent1-color);
-    color: var(--primary-color);
+    color: var(--secondary-color);
     padding: 10px;
     margin: 10px;
 }

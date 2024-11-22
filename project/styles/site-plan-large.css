@@ -5,17 +5,4 @@
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
     }
-    .grid-header {
-        display: block;
-        background-color: var(--primary-color);
-        border: 1px solid var(--secondary-color);
-        text-align: center;
-        padding: 8px;
-        font-family: var(--font-primary);
-        font-weight: bold;
-    }
-    .grid-item {
-        text-align: center;
-        padding: 8px;
-    }
 }

@@ -69,10 +69,21 @@ section p {
 }
 .grid-item {
   border: 1px solid var(--secondary-color);
-  padding: 15px;
+  padding: 8px;
   font-family: var(--font-primary);
-  text-align: left;
+  text-align: center;
   position: relative;
+  width: 100%;
+}
+.grid-header {
+    display: block;
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+    text-align: center;
+    padding: 8px;
+    font-family: var(--font-primary);
+    font-weight: bold;
+    width: 100%;
 }
 /* Specific color styles */
 .primary {

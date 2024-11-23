@@ -26,9 +26,16 @@
         margin: 0;
         display: inline;
     }
-    /* Card Body */
+    /* Card Body Large Views */
     .card-body {
         padding-top: 50px; 
+        font-size: 12px;
+    }
+    /* Card Weather Large Views */
+    .card-weather {
+        position: absolute !important;
+        bottom: 2rem;
+        right: 3rem;
         font-size: 12px;
     }
 }

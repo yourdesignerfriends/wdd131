@@ -18,9 +18,10 @@
 h1, h2, h3, p {
     overflow-wrap: break-word;
 }
-h1 {
+h1,h2,h3 {
     font-family: var(--heading-font);
     text-transform: uppercase;
+    padding: 10px;
 }
 /* Body */
 body {
@@ -69,5 +70,16 @@ footer {
     text-align: center;
     padding: 20px;
 }
+.label-value-pair {
+    margin-bottom: 10px;
+}
+.label-value-pair label {
+    font-weight: bold;
+    min-width: 100px;
+}
+.label-value-pair span {
+    color: var(--secondary-color);
+}
+
 
 

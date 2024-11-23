@@ -20,17 +20,15 @@ h1, h2, h3, p {
 }
 h1,h2,h3 {
     font-family: var(--heading-font);
-    text-transform: uppercase;
     padding: 10px;
 }
 /* Body */
 body {
     font-family: var(--paragraph-font); 
     max-width: 350px;
-    background-color: var(--secondary-color);
+    border: 3px solid var(--accent2-color);
 }
 .container {
-    max-width: 350px;
     background-image: repeating-linear-gradient(
         90deg, 
         var(--accent1-color) 0%, 
@@ -40,7 +38,6 @@ body {
         var(--accent3-color) 66.66%, 
         var(--accent3-color) 100%
     );
-    background-size: 350px auto;
 }
 section {
     background-color: var(--primary-color);
@@ -48,22 +45,21 @@ section {
     justify-content: center;
     text-align: center;
     padding: 20px;
+    margin-bottom: 10px;
 }
 /* Image Guacamaya */
 img {
     display: block;
     width: 100%;
     height: auto;
+    margin-bottom: 10px;
 }
 .hero {
-    margin-top: 10px;
-    margin-bottom: 10px;
     width: 100%;
     max-width: 100%;
     overflow: hidden;
 }
 footer {
-    margin-top: 10px;
     background-color: var(--primary-color);
     align-items: center;
     justify-content: center;

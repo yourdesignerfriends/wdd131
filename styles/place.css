@@ -21,7 +21,6 @@ h1, h2, h3, p {
 h1 {
     font-family: var(--heading-font);
     text-transform: uppercase;
-    padding: 10px;
 }
 /* Body */
 body {
@@ -47,6 +46,7 @@ section {
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 20px;
 }
 /* Image Guacamaya */
 img {
@@ -60,6 +60,14 @@ img {
     width: 100%;
     max-width: 100%;
     overflow: hidden;
+}
+footer {
+    margin-top: 10px;
+    background-color: var(--primary-color);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
 }
 
 

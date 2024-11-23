@@ -25,7 +25,6 @@ h1,h2,h3 {
 /* Body */
 body {
     font-family: var(--paragraph-font); 
-    max-width: 350px;
     border: 3px solid var(--accent2-color);
 }
 .container {
@@ -47,7 +46,33 @@ section {
     padding: 20px;
     margin-bottom: 10px;
 }
-/* Image Guacamaya */
+/* Card design */
+.card {
+    background-color: var(--primary-color);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.card-header {
+    text-align: center;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+th, td {
+    padding: 10px;
+}
+th {
+    text-align: right;
+}
+td {
+    text-align: left;
+}
+/* Hero Image */
 img {
     display: block;
     width: 100%;
@@ -59,6 +84,7 @@ img {
     max-width: 100%;
     overflow: hidden;
 }
+/* Footer */
 footer {
     background-color: var(--primary-color);
     align-items: center;
@@ -66,16 +92,3 @@ footer {
     text-align: center;
     padding: 20px;
 }
-.label-value-pair {
-    margin-bottom: 10px;
-}
-.label-value-pair label {
-    font-weight: bold;
-    min-width: 100px;
-}
-.label-value-pair span {
-    color: var(--secondary-color);
-}
-
-
-

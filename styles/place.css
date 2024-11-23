@@ -19,7 +19,6 @@
 body {
     font-family: var(--paragraph-font); 
     max-width: 800px;
-    background-color: var(--secondary-color);
 }
 /* Fonts Styles*/
 h1 {
@@ -39,12 +38,10 @@ h1,h2,h3 {
 /* Background Color Flag */
 .flag-color {
     background-image: repeating-linear-gradient(
-        90deg, 
-        var(--accent1-color) 0%, 
-        var(--accent1-color) 33.33%, 
-        var(--accent2-color) 33.33%, 
-        var(--accent2-color) 66.66%, 
-        var(--accent3-color) 66.66%, 
+        90deg,
+        var(--accent1-color) 0%,
+        var(--accent1-color) 50%, 
+        var(--accent3-color) 50%, 
         var(--accent3-color) 100%
     );
 }
@@ -58,12 +55,13 @@ picture img {
 }
 /* Section */
 section {
-    background-color: var(--primary-color);
+    background-color: var(--accent2-color);
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 20px;
     margin-bottom: 10px;
+    color: var(--primary-color);
 }
 /* Card */
 .card {
@@ -96,7 +94,8 @@ td {
 }
 /* Footer */
 footer {
-    background-color: var(--primary-color);
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
     align-items: center;
     justify-content: center;
     text-align: center;

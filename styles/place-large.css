@@ -13,13 +13,14 @@
     }
     /* Card Header Large Views */
     .card-header {
-        background-color: var(--accent1-color);
+        background-color: rgba(0, 36, 125, 0.7);
         position: absolute;
         left: -1rem;
         width: 85%;
         text-align: start;
         padding: 0.5rem;
         margin-bottom: 0;
+        color: var(--primary-color);
     }
     /* Card Header H2 Large Views*/
     .card-header h2 {

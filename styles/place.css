@@ -25,6 +25,10 @@ body {
 h1 {
     font-size: 2.1rem;
 }
+h2 {
+    font-size: 1.5rem;
+    display: block;
+}
 h1, h2, h3, p {
     overflow-wrap: break-word;
 }
@@ -32,6 +36,7 @@ h1,h2,h3 {
     font-family: var(--heading-font);
     padding: 10px;
 }
+/* Background Color Flag */
 .flag-color {
     background-image: repeating-linear-gradient(
         90deg, 
@@ -43,6 +48,7 @@ h1,h2,h3 {
         var(--accent3-color) 100%
     );
 }
+/* Section */
 section {
     background-color: var(--primary-color);
     align-items: center;
@@ -57,9 +63,13 @@ section {
     padding: 20px;
     margin-bottom: 10px;
 }
-
+/* Card Header*/
 .card-header {
     text-align: center;
+}
+/* Card Body */
+.card-body{
+    justify-items: center;
 }
 table {
     width: 100%;

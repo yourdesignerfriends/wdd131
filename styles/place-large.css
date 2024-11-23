@@ -38,4 +38,10 @@
         right: 3rem;
         font-size: 12px;
     }
+    /* Weather Icon */
+    .weather-icon::after {
+        content: "🌤️";
+        font-size: 25px;
+        margin-left: 1rem;
+    }
 }

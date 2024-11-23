@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const modifiedElement = document.getElementById("lastModified");
     
     if (copyrightElement) { 
-        copyrightElement.textContent = `\u00A9 ${currentYear} ${author} ${place}`; 
+        copyrightElement.textContent = `\u00A9 ${currentYear} 🇻🇪 ${author} 🇺🇸 ${place}`; 
         } 
     if (modifiedElement) { 
         modifiedElement.textContent = `Last modification: ${lastModified}`; 

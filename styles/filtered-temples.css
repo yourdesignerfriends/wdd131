@@ -106,7 +106,7 @@ main h2 {
 }
 
 /* ------------- Container for the temple pictures -------------*/
-.container {
+.temple-container {
     display: grid;
     gap: 20px;
     padding: 20px;

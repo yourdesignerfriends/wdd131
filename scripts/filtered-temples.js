@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
             mainHeading.textContent = event.target.textContent;
         });
     });
-    /* hamburger menu button */
+    /* Hamburger menu button */
     const hamButton = document.querySelector('#menu');
     const navigation = document.querySelector('.navigation');
     const mainTitle = document.querySelector('#main-title');

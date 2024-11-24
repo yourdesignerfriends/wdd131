@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
           templeName: "Aba Nigeria",
           location: "Aba, Nigeria",
-          dedicated: "2005, August, 7",
+          dedicated: "2005,August,7",
           area: 11500,
           imageUrl:
           "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg"
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
           templeName: "Manti Utah",
           location: "Manti, Utah, United States",
-          dedicated: "1888, May, 21",
+          dedicated: "1888,May,21",
           area: 74792,
           imageUrl:
           "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg"
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
           templeName: "Payson Utah",
           location: "Payson, Utah, United States",
-          dedicated: "2015, June, 7",
+          dedicated: "2015,June,7",
           area: 96630,
           imageUrl:
           "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg"
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
           templeName: "Yigo Guam",
           location: "Yigo, Guam",
-          dedicated: "2020, May, 2",
+          dedicated: "2020,May,2",
           area: 6861,
           imageUrl:
           "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg"
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
           templeName: "Washington D.C.",
           location: "Kensington, Maryland, United States",
-          dedicated: "1974, November, 19",
+          dedicated: "1974,November,19",
           area: 156558,
           imageUrl:
           "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg"
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
           templeName: "Lima Perú",
           location: "Lima, Perú",
-          dedicated: "1986, January, 10",
+          dedicated: "1986,January,10",
           area: 9600,
           imageUrl:
           "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg"
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
           templeName: "Mexico City Mexico",
           location: "Mexico City, Mexico",
-          dedicated: "1983, December, 2",
+          dedicated: "1983,December,2",
           area: 116642,
           imageUrl:
           "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             templeName: "Rome Italy Temple",
             location: "Rome, Italy",
-            dedicated: "2019, March, 10",
+            dedicated: "2019,March,10",
             area: 41010,
             imageUrl:
             "https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-3549.jpg"
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             templeName: "Caracas Venezuela Temple",
             location: "Caracas, Venezuela",
-            dedicated: "2000, August, 5",
+            dedicated: "2000,August,5",
             area: 15332,
             imageUrl:
             "https://churchofjesuschristtemples.org/assets/img/temples/_temp/096-Caracas-Venezuela-Temple.jpg"
@@ -96,16 +96,45 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             templeName: "Hong Kong China Temple",
             location: "Hong Kong, China",
-            dedicated: "1996, May, 26",
+            dedicated: "1996,May,26",
             area: 51921,
             imageUrl:
             "https://churchofjesuschristtemples.org/assets/img/temples/hong-kong-china-temple/hong-kong-china-temple-53443.jpg"
         },
     ];
-    /* Convert Dates*/
+    /* convert Dates */
+    const monthMap = {
+        January: 0,
+        February: 1,
+        March: 2,
+        April: 3,
+        May: 4,
+        June: 5,
+        July: 6,
+        August: 7,
+        September: 8,
+        October: 9,
+        November: 10,
+        December: 11
+    };
+
+    /* Convert Dates */
     const convertDateStringToDate = (dateString) => {
-        const [year, month, day] = dateString.split(', ');
-        return new Date(`${year}-${month}-${day}`);
+        const parts = dateString.split(',');
+
+        if (parts.length !== 3) {
+            throw new Error("Formato de fecha incorrecto. Debe ser 'año, mes, día'.");
+        }
+
+        const [year, month, day] = parts.map(part => part.trim());
+
+        if (isNaN(year) || isNaN(day) || !monthMap.hasOwnProperty(month)) {
+            throw new Error("Formato de fecha incorrecto. Verifica que el año y el día sean números y el mes sea un nombre de mes válido.");
+        }
+
+        const monthIndex = monthMap[month];
+
+        return new Date(Date.UTC(year, monthIndex, day));
     };
     /* Loop through the array and create "temple cards" for each temple by displaying */
     const templeContainer = document.getElementById('temple-container');

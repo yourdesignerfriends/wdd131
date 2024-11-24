@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+:root {
+    /* Color Palette from https://coolors.co/fefae0-283618-419d78 */
+    --primary-color: #fefae0;
+    --secondary-color: #283618;
+    --accent1-color: #419d78;
+    /* fonts */
+    --heading-font: 'Lato', sans-serif;
+    --paragraph-font: 'Lato', sans-serif;
+}
+* {
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* ------------- Body -------------*/
+body h1 p, ul li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--paragraph-font);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+/* ------------- Header -------------*/
+header {
+    display: block;
+    align-items: center;
+    background-color: var(--secondary-color);
+}
+header h1 {
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+/* ------------- Navigation -------------*/
+.navigation {
+	display: flex;
+	flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+}
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+.navigation a:hover {
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
+}
+
+/* ------------- hamburger menu button -------------*/
+#menu {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: solid 1px var(--secondary-color);
+    border-radius: 50%;
+    padding: 0px;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+	font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    justify-content: center;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+#menu:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transform: scale(1.1);
+}
+#menu::before {
+	content: "\2630";
+}
+#menu.open::before {
+	content: "X";
+}
+.navigation.open a {
+    display: block;
+    width: 100%;
+}
+.hidden {
+    display: none;
+}
+/* ------------- Main -------------*/
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+/* ------------- Container for the temple pictures -------------*/
+.container {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/* ------------- Image -------------*/
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px var(--accent1-color);
+}
+img {
+    width: 100%; 
+    border-radius: 8px;  
+    box-shadow: 0 4px 6px var(--accent1-color);
+    margin: 10px auto;
+    padding: 10px; 
+    height: auto;
+}
+figcaption {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-top: 10px;
+}
+
+/* ------------- Footer -------------*/
+footer {
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 20px;
+    box-shadow: 0 4px 6px var(--accent1-color);
+}
+footer p {  
+    margin: 0;
+    font-size: 1rem; 
+}

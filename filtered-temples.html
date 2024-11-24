@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Temple Album</title>
+    <meta name="description" content="Temple Album page that responds to small and large views, uses a hamburger menu, and will respond to user requests">
+    <meta name="author" content="Analina Del Vecchio Madriz">
+    <meta name="keywords" content="web programming, JavaScript resources, BYU Idaho, programming language, beginner JavaScript, responsive web pages, frontend development">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript> 
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
+    </noscript>
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+</head>
+<body>
+    <header>
+        <section id="main-title">
+            <h1>Temple Album</h1>
+        </section>
+        <button id="menu" aria-label="Open menu"></button>
+        <nav class="navigation">      
+            <a href="#" class="menu-link">Home</a>
+            <a href="#" class="menu-link">Old</a>
+            <a href="#" class="menu-link">New</a>
+            <a href="#" class="menu-link">Large</a>
+            <a href="#" class="menu-link">Small</a>    
+        </nav>
+    </header>
+    <main>
+        <h2 id="main-heading">Home</h2>
+        <div>
+            <!-- Here I am using a container for the 9 figure elements. -->
+            <div class="container">
+                <figure> 
+                    <img src="images/seattle-washington-temple.webp" alt="Seattle Washington Temple" width="653" height="490"> 
+                    <figcaption>Seattle Washington Temple</figcaption> 
+                </figure>
+                <figure> 
+                    <img src="images/seattle-washington-temple.webp" alt="Seattle Washington Temple" width="653" height="490"> 
+                    <figcaption>Seattle Washington Temple</figcaption> 
+                </figure>
+                <figure> 
+                    <img src="images/seattle-washington-temple.webp" alt="Seattle Washington Temple" width="653" height="490"> 
+                    <figcaption>Seattle Washington Temple</figcaption> 
+                </figure>
+                <figure> 
+                    <img src="images/seattle-washington-temple.webp" alt="Seattle Washington Temple" width="653" height="490"> 
+                    <figcaption>Seattle Washington Temple</figcaption> 
+                </figure>
+                <figure> 
+                    <img src="images/seattle-washington-temple.webp" alt="Seattle Washington Temple" width="653" height="490"> 
+                    <figcaption>Seattle Washington Temple</figcaption> 
+                </figure>
+                <figure> 
+                    <img src="images/seattle-washington-temple.webp" alt="Seattle Washington Temple" width="653" height="490"> 
+                    <figcaption>Seattle Washington Temple</figcaption> 
+                </figure>
+                <figure> 
+                    <img src="images/seattle-washington-temple.webp" alt="Seattle Washington Temple" width="653" height="490"> 
+                    <figcaption>Seattle Washington Temple</figcaption> 
+                </figure>
+                <figure> 
+                    <img src="images/seattle-washington-temple.webp" alt="Seattle Washington Temple" width="653" height="490"> 
+                    <figcaption>Seattle Washington Temple</figcaption> 
+                </figure>
+                <figure> 
+                    <img src="images/seattle-washington-temple.webp" alt="Seattle Washington Temple" width="653" height="490"> 
+                    <figcaption>Seattle Washington Temple</figcaption> 
+                </figure>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p id="copyright"></p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/filtered-temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>  
+</body>
+</html>

@@ -1,0 +1,21 @@
+@media screen and (min-width: 500px) {
+    /* ------------- Header -------------*/
+    header {
+        display: flex;
+    }
+    /* ------------- hamburger menu button Hidden -------------*/
+    #menu {
+		display: none;
+	}
+    /* ------------- Navigation -------------*/
+	.navigation {
+		flex-direction: row;
+	}
+	.navigation a {
+		display: block;
+	}
+    /* ------------- Main -------------*/
+    main {
+        max-width: 1200px;
+    }  
+}

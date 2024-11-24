@@ -102,6 +102,11 @@ document.addEventListener('DOMContentLoaded', () => {
             "https://churchofjesuschristtemples.org/assets/img/temples/hong-kong-china-temple/hong-kong-china-temple-53443.jpg"
         },
     ];
+    /* Convert Dates*/
+    const convertDateStringToDate = (dateString) => {
+        const [year, month, day] = dateString.split(', ');
+        return new Date(`${year}-${month}-${day}`);
+    };
     /* Loop through the array and create "temple cards" for each temple by displaying */
     const templeContainer = document.getElementById('temple-container');
             

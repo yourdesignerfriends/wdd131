@@ -102,4 +102,22 @@ document.addEventListener('DOMContentLoaded', () => {
             "https://churchofjesuschristtemples.org/assets/img/temples/hong-kong-china-temple/hong-kong-china-temple-53443.jpg"
         },
     ];
+    /* Loop through the array and create "temple cards" for each temple by displaying */
+    const templeContainer = document.getElementById('temple-container');
+            
+    const createTempleCard = (temple) => {
+        const card = document.createElement('div');
+        card.classList.add('temple-card');
+        card.innerHTML = `
+            <h3>${temple.templeName}</h3>
+            <p><strong>Location:</strong> ${temple.location}</p>
+            <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
+            <p><strong>Area:</strong> ${temple.area} sq ft</p>
+            <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
+        `;
+        templeContainer.appendChild(card);
+    };
+
+    temples.forEach(createTempleCard);
+    
 });

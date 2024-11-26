@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <p><strong>Location:</strong> ${temple.location}</p>
             <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
             <p><strong>Area:</strong> ${temple.area} sq ft</p>
-            <img src="${temple.imageUrl}" width="448" height="252" alt="${temple.templeName}" loading="lazy">
+            <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
         `;
         templeContainer.appendChild(card);
     };

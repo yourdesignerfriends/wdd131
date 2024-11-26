@@ -103,22 +103,30 @@ document.addEventListener('DOMContentLoaded', () => {
         },
     ];
 
-    /* Loop through the array and create "temple cards" for each temple by displaying */
     const templeContainer = document.getElementById('temple-container');
-    
+
     const createTempleCard = (temple) => {
         const card = document.createElement('div');
         card.classList.add('temple-card');
-        card.innerHTML = `
+
+        const imgContainer = document.createElement('div');
+        imgContainer.classList.add('img-container');
+        imgContainer.innerHTML = `<img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">`;
+
+        const contentContainer = document.createElement('div');
+        contentContainer.classList.add('content-container');
+        contentContainer.innerHTML = `
             <h3>${temple.templeName}</h3>
             <p><strong>Location:</strong> ${temple.location}</p>
             <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
             <p><strong>Area:</strong> ${temple.area} sq ft</p>
-            <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
         `;
+
+        card.appendChild(contentContainer);
+        card.appendChild(imgContainer);
         templeContainer.appendChild(card);
     };
-    
+
     temples.forEach(createTempleCard);
 
 });

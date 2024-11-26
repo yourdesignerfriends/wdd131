@@ -1,29 +1,29 @@
 @media screen and (min-width: 500px) {
-    /* ------------- Header -------------*/
+    /* Header */
     header {
         display: flex;
     }
-    /* ------------- hamburger menu button Hidden -------------*/
+    /* hamburger menu button Hidden */
     #menu {
 		display: none;
 	}
-    /* ------------- Navigation -------------*/
+    /* Navigation */
 	.navigation {
 		flex-direction: row;
 	}
 	.navigation a {
 		display: block;
 	}
-    /* ------------- Main -------------*/
+    /* Main */
     main {
         max-width: 1200px;
     } 
-    /* ------------- Temple Card -------------*/
+    /* Temple Card */
     .temple-card {
         flex: 1 1 280px;
         max-width: 280px;
     }
-    /* ------------- Temple Container -------------*/
+    /* Temple Container */
     .temple-container {
         display: flex;
         flex-wrap: wrap;

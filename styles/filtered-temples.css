@@ -118,22 +118,20 @@ main h3 {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background-color: #f9f9f9;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     max-width: 300px;
 }
-
-/* ------------- Image -------------*/
-img:hover {
+.temple-card:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 12px var(--accent1-color);
 }
+
+/* ------------- Image -------------*/
+
 img {
     width: 100%; 
     max-width: 280px;
     border-radius: 8px;  
-    box-shadow: 0 4px 6px var(--accent1-color);
     margin: 10px auto;
     padding: 10px; 
     height: auto;

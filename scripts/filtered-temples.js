@@ -104,7 +104,6 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     /* Loop through the array and create "temple cards" for each temple by displaying */
-    const templeName = document.getElementById('temple-name');
     const templeContainer = document.getElementById('temple-container');
     
     const createTempleCard = (temple) => {

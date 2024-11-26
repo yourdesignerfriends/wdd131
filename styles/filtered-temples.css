@@ -136,6 +136,12 @@ img {
     padding: 10px; 
     height: auto;
 }
+/* ------------- Paragraphs -------------*/
+.temple-card p {
+    font-size: 0.7rem; 
+    line-height: 1.2;
+    align-items: center;
+}
 /* Footer */
 footer {
     text-align: center;

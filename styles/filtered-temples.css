@@ -143,6 +143,7 @@ img {
     height: 200px;
     margin: 10px auto;
     object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
 }
 /* Footer */
 footer {

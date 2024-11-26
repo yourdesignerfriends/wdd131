@@ -128,10 +128,7 @@ main h3 {
 
 img {
     width: 100%; 
-    max-width: 280px;
-    border-radius: 8px;  
     margin: 10px auto;
-    padding: 10px; 
     height: auto;
 }
 /* Footer */

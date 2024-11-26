@@ -128,10 +128,9 @@ main h3 {
 
 img {
     width: 100%; 
-    margin: 10px auto;
-    height: auto;
-    object-fit: cover;
     height: 200px;
+    margin: 10px auto;
+    object-fit: cover;
 }
 /* Footer */
 footer {

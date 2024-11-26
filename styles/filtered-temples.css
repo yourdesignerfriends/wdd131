@@ -33,8 +33,6 @@ header {
     background-color: var(--secondary-color);
 }
 header h1 {
-    padding: 1.5rem;
-    font-size: 1.5rem;
     color: var(--primary-color);
 }
 /* ------------- Navigation -------------*/
@@ -102,7 +100,7 @@ main {
 
 main h2 {
     margin: 0;
-    font-size: 1.5rem;
+    text-align: center;
 }
 
 /* ------------- Container for the temple pictures -------------*/
@@ -112,6 +110,17 @@ main h2 {
     padding: 20px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
+/* ------------- Temple Card -------------*/
+.temple-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
 
 /* ------------- Image -------------*/
 img:hover {
@@ -120,19 +129,14 @@ img:hover {
 }
 img {
     width: 100%; 
+    max-width: 280px;
     border-radius: 8px;  
     box-shadow: 0 4px 6px var(--accent1-color);
     margin: 10px auto;
     padding: 10px; 
     height: auto;
 }
-figcaption {
-    text-align: center;
-    color: var(--secondary-color);
-    margin-top: 10px;
-}
-
-/* ------------- Footer -------------*/
+/* Footer */
 footer {
     text-align: center;
     background-color: var(--secondary-color);
@@ -142,5 +146,4 @@ footer {
 }
 footer p {  
     margin: 0;
-    font-size: 1rem; 
 }

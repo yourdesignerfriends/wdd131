@@ -17,5 +17,17 @@
     /* ------------- Main -------------*/
     main {
         max-width: 1200px;
-    }  
+    } 
+    /* ------------- Temple Card -------------*/
+    .temple-card {
+        flex: 1 1 280px;
+        max-width: 280px;
+    }
+    /* ------------- Temple Container -------------*/
+    .temple-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 40px;
+    }
 }

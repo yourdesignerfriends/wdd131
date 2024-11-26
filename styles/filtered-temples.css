@@ -102,6 +102,15 @@ main h2 {
     margin: 0;
     text-align: center;
 }
+main h3 {
+    margin: 0;
+    text-align: center;
+}
+main p {
+    font-size: 0.7rem; 
+    line-height: 1.2;
+    text-align: center;
+}
 
 /* ------------- Container for the temple pictures -------------*/
 .temple-container {
@@ -135,12 +144,6 @@ img {
     margin: 10px auto;
     padding: 10px; 
     height: auto;
-}
-/* ------------- Paragraphs -------------*/
-.temple-card p {
-    font-size: 0.7rem; 
-    line-height: 1.2;
-    align-items: center;
 }
 /* Footer */
 footer {

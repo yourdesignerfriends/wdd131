@@ -43,7 +43,7 @@ header h1 {
 }
 .navigation a {
 	display: none;
-	padding: 1rem;
+	padding: 20px;
 	text-decoration: none;
     color: var(--primary-color);
     font-weight: 700;
@@ -88,13 +88,7 @@ header h1 {
 .hidden {
     display: none;
 }
-/* Main */
-main {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 main h2, h3, p {
     text-align: center;
 }

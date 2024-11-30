@@ -105,20 +105,24 @@ main h3 {
 }
 /* Temple Container */
 .temple-container {
-    display: grid;
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 280px;
+    justify-content: space-around;
+    gap: 40px;
     padding: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
 /* Temple Card */
 .temple-card {
     display: flex;
+    flex: 1 1 280px;
     flex-direction: column;
     align-items: center;
     padding: 20px;
     border-radius: 8px;
     border: 1px solid var(--secondary-color);
     font-size: 0.9rem;
+    max-width: 400px;
 }
 /* Image */
 img {

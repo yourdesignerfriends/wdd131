@@ -21,9 +21,11 @@ body h1 p, ul li {
 }
 body {
     font-family: var(--paragraph-font);
-    background-color: var(--primary-color);
     color: var(--secondary-color);
     max-width: 980px;
+}
+main {
+    background-color: var(--primary-color);
 }
 /* Header */
 header {

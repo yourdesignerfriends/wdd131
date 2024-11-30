@@ -114,7 +114,7 @@ main h3 {
 /* Temple Card */
 .temple-card {
     display: flex;
-    flex: 1 1 280px;
+    flex: 1 1 calc(50% - 20px);
     flex-direction: column;
     align-items: center;
     border-radius: 8px;

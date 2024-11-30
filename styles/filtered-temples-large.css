@@ -14,4 +14,16 @@
 	.navigation a {
 		display: block;
 	}
+    .temple-card {
+        display: flex;
+        flex: 1 1 calc(50% - 20px);
+        flex-direction: column;
+        align-items: center;
+    }
+    .temple-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 40px;
+    }
 }

@@ -14,8 +14,4 @@
 	.navigation a {
 		display: block;
 	}
-    /* Main */
-    main {
-        max-width: 1200px;
-    } 
 }

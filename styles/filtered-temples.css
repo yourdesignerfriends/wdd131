@@ -23,6 +23,7 @@ body {
     font-family: var(--paragraph-font);
     background-color: var(--primary-color);
     color: var(--secondary-color);
+    max-width: 980px;
 }
 /* Header */
 header {
@@ -129,6 +130,7 @@ img {
     object-fit: cover;
     height: 200px;
     margin-top: 1rem;
+    padding: 10px;
 }
 /* Footer */
 footer {

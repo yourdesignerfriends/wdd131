@@ -116,7 +116,7 @@ main h3 {
     border: 1px solid var(--secondary-color);
     box-shadow: 0 2px 4px var(--accent1-color);
     max-width: 400px;
-    overflow: hidden;
+    margin: 20px;
 }
 /* Image */
 img {
@@ -124,6 +124,7 @@ img {
     object-fit: cover;
     height: 300px;
     margin-top: 1rem;
+    padding: 20px;
 }
 /* Footer */
 footer {

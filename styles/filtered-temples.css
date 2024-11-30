@@ -106,12 +106,10 @@ main h3 {
 }
 /* Temple Container */
 .temple-container {
-
     padding: 20px;
 }
 /* Temple Card */
 .temple-card {
-
     border-radius: 8px;
     border: 1px solid var(--secondary-color);
     box-shadow: 0 2px 4px var(--accent1-color);
@@ -122,9 +120,8 @@ main h3 {
 img {
     width: 100%;
     object-fit: cover;
-    height: 200px;
+    height: 300px;
     margin-top: 1rem;
-    padding: 10px;
 }
 /* Footer */
 footer {

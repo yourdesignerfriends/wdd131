@@ -138,6 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function filterTemples(filter) {
         let filteredTemples = temples;
         switch (filter) {
+            /* Here I am extracting the first four characters of the dedicated string, representing the year and converting them to integers */
             case 'old':
                 filteredTemples = temples.filter(temple => parseInt(temple.dedicated.substring(0, 4)) < 1900);
                 break;

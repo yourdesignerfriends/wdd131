@@ -103,7 +103,6 @@ main h3 {
     color: var(--secondary-color); 
     padding: 15px; 
     text-align: center; 
-    font-size: 28px; 
     font-weight: bold; 
 }
 /* Temple Container */
@@ -132,7 +131,4 @@ footer {
     background-color: var(--secondary-color);
     color: var(--primary-color);
     padding: 20px;
-}
-footer p {  
-    margin: 0;
 }

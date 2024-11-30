@@ -24,7 +24,7 @@
         max-width: 280px;
     }
     /* Temple Container */
-    .temple-container {
+    #temple-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;

@@ -107,7 +107,6 @@ main h3 {
 .temple-container {
     display: flex;
     flex-wrap: wrap;
-    flex: 1 1 280px;
     justify-content: space-around;
     gap: 40px;
     padding: 20px;

@@ -118,11 +118,13 @@ main h3 {
     padding: 20px;
     border-radius: 8px;
     border: 1px solid var(--secondary-color);
+    font-size: 0.7rem;
 }
 /* Image */
 img {
-    width: 100%; 
-    height: auto;
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
     margin-top: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
 }

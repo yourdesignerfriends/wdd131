@@ -20,7 +20,12 @@ body {
 /* Main */
 main {
     background-color: var(--accent2-color);
-    position: relative;
+}
+form {
+    background-color: var(--accent2-color);
+    border-radius: 8px;
+    padding: 20px;
+    color: var(--primary-color);
 }
 /* Header */
 header {

@@ -1,12 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 :root {
-    /* Color Palette from https://coolors.co/fefae0-283618-419d78 */
-    --primary-color: #fefae0;
-    --secondary-color: #283618;
-    --accent1-color: #419d78;
+    /* Color Palette from https://coolors.co/003049-ffffff-808d8e-000000 */
+    --primary-color: #ffffff;
+    --secondary-color: #000000;
+    --accent1-color: #003049;
+    --accent2-color: #808d8e;
 }
 * {
-	margin: 0 auto;
+	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+/* Body */
+body {
+    margin: 5px auto;
+    max-width: 500px;
+    font-family: 'Lato', sans-serif;
+}
+/* Header */
+header {
+    text-align: center;
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    padding: 0.4rem;
+    margin-bottom: 10px;
+}
+/* Footer */
+footer {
+    text-align: center;
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    padding: 0.6rem;
+    margin-top: 10px;
 }

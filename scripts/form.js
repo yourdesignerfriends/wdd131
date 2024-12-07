@@ -13,4 +13,4 @@ document.addEventListener('DOMContentLoaded', () => {
     if (modifiedElement) { 
         modifiedElement.textContent = `Last modification: ${lastModified}`; 
         } 
-    });
+});

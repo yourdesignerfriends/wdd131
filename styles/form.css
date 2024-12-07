@@ -19,9 +19,8 @@ body {
 form {
     background-color: var(--accent2-color);
     border-radius: 8px;
-    border: 1px solid var(--accent1-color);
     padding: 20px;
-    color: var(--primary-color);
+    color: var(--accent1-color);
 }
 /* Header */
 header {

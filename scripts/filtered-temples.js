@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    /* Navigation */
+    // Navigation
     const menuLinks = document.querySelectorAll('.menu-link');
     const mainHeading = document.getElementById('main-heading');
 
@@ -11,8 +11,22 @@ document.addEventListener('DOMContentLoaded', () => {
             filterTemples(filter);
         });
     });
-
-    /* Hamburger menu button */
+    // Get dates
+        const currentYear = new Date().getFullYear(); 
+        const lastModified = document.lastModified; 
+        const author = "Analina Del Vecchio Madriz";
+        const place = "Washington, USA";
+    
+        const copyrightElement = document.getElementById("copyright"); 
+        const modifiedElement = document.getElementById("lastModified");
+        
+        if (copyrightElement) { 
+            copyrightElement.textContent = `\u00A9 ${currentYear} | ${author} | ${place}`; 
+            } 
+        if (modifiedElement) { 
+            modifiedElement.textContent = `Last modification: ${lastModified}`; 
+            } 
+    // Hamburger menu button
     const hamButton = document.querySelector('#menu');
     const navigation = document.querySelector('.navigation');
     const mainTitle = document.querySelector('#main-title');
@@ -22,8 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
         hamButton.classList.toggle('open');
         mainTitle.classList.toggle('hidden');
     });
-
-    /* Array of Temple Objects */
+    // Array of Temple Objects
     const temples = [
         {
             templeName: "Aba Nigeria",
@@ -96,8 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
             imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/hong-kong-china-temple/hong-kong-china-temple-53443.jpg"
         },
     ];
-
-    /* Función para crear tarjetas de templos */
+    // Temple Cards
     function createTempleCard(temple) {
         let card = document.createElement("section");
         card.classList.add("temple-card");
@@ -124,8 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         return card;
     }
-
-    /* Función para mostrar templos */
+    // Show Temple Cards
     function displayTemples(filteredTemples) {
         const templeContainer = document.querySelector(".temple-container");
         templeContainer.innerHTML = '';
@@ -133,12 +144,10 @@ document.addEventListener('DOMContentLoaded', () => {
             templeContainer.appendChild(createTempleCard(temple));
         });
     }
-
-    /* Función para filtrar templos */
+    // Filter Temple Cards
     function filterTemples(filter) {
         let filteredTemples = temples;
         switch (filter) {
-            /* Here I am extracting the first four characters of the dedicated string, representing the year and converting them to integers */
             case 'old':
                 filteredTemples = temples.filter(temple => parseInt(temple.dedicated.substring(0, 4)) < 1900);
                 break;
@@ -158,6 +167,5 @@ document.addEventListener('DOMContentLoaded', () => {
         displayTemples(filteredTemples);
     }
 
-    // Inicializar mostrando todos los templos
     filterTemples('home');
 });

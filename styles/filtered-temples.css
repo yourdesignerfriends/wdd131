@@ -4,9 +4,6 @@
     --primary-color: #fefae0;
     --secondary-color: #283618;
     --accent1-color: #419d78;
-    /* fonts */
-    --heading-font: 'Lato', sans-serif;
-    --paragraph-font: 'Lato', sans-serif;
 }
 * {
 	margin: 0 auto;
@@ -14,13 +11,12 @@
 	box-sizing: border-box;
 }
 /* Body */
+/*
 body h1 p, ul li {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+}*/
 body {
-    font-family: var(--paragraph-font);
+    font-family: 'Lato', sans-serif;
     color: var(--secondary-color);
     max-width: 980px;
 }

@@ -18,7 +18,6 @@ body h1 p, ul li {
 body {
     font-family: 'Lato', sans-serif;
     color: var(--secondary-color);
-    max-width: 980px;
 }
 main {
     background-color: var(--primary-color);

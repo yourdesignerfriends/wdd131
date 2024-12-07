@@ -41,4 +41,13 @@ document.addEventListener('DOMContentLoaded', () => {
             averagerating: 5.0
         }
     ];
+
+    const selectElement = document.getElementById('product');
+    
+    products.forEach(product => {
+        const option = document.createElement('option');
+        option.value = product.name;
+        option.textContent = `${product.name} (Rating: ${product.averagerating})`;
+        selectElement.appendChild(option);
+    });
 });

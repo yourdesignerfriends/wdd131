@@ -25,7 +25,7 @@ form {
 }
 label {
     display: block;
-    margin-bottom: 5px;
+    margin-top: 5px;
 }
 select, input[type="date"] {
     width: 100%;
@@ -41,6 +41,18 @@ select, input[type="date"] {
     gap: 20px;
     text-align: center;
     flex-wrap: wrap;
+}
+#useful-features {
+    margin-bottom: 20px;
+}
+
+#useful-features label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#useful-features input[type="checkbox"] {
+    margin-right: 10px;
 }
 /* Header */
 header {

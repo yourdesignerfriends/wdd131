@@ -27,7 +27,7 @@ label {
     display: block;
     margin-top: 5px;
 }
-select, input[type="date"] {
+select, input[type="date"], textarea {
     width: 100%;
     color: var(--accent1-color);
     border: 1px solid var(--accent1-color);

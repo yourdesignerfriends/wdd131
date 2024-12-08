@@ -54,6 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
         selectElement.appendChild(option);
     });
 
+    // Count Reviews
     const clicks = document.getElementById("clicks")
 
     function displayStorage() {

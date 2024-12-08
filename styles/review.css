@@ -69,10 +69,3 @@ button:hover {
     font-size: 1rem;
     color: var(--accent1-color);
 }
-
-.summary a {
-    display: inline-block;
-    margin-top: 10px;
-    color: var(--accent1-color);
-    text-decoration: none;
-}

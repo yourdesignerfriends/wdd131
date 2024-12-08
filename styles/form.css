@@ -27,11 +27,13 @@ label {
     display: block;
     margin-bottom: 5px;
 }
-select, input {
+select, input[type="date"] {
     width: 100%;
     color: var(--accent1-color);
     border: 1px solid var(--accent1-color);
     margin-bottom: 10px;
+    border-radius: 4px;
+    appearance: none;
 }
 /* Rating stars */
 .rating {

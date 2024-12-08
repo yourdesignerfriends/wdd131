@@ -27,7 +27,7 @@ label {
     display: block;
     margin-top: 5px;
 }
-select, input[type="date"], textarea, input[type="text"] {
+select, input[type="date"], textarea, input[type="text"], input[type="submit"] {
     width: 100%;
     color: var(--accent1-color);
     border: 1px solid var(--accent1-color);
@@ -48,6 +48,22 @@ select, input[type="date"], textarea, input[type="text"] {
 }
 #useful-features input[type="checkbox"] {
     margin-right: 10px;
+}
+input[type="submit"] {
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+    text-align: center;
+}
+input[type="submit"]:hover {
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
 }
 /* Header */
 header {

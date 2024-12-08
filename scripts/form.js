@@ -59,9 +59,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const reviewForm = document.querySelector('form');
     if (reviewForm) {
-        reviewForm.addEventListener('submit', () => {
+        reviewForm.addEventListener('submit', (event) => {
+            event.preventDefault();
             reviewCount++;
             localStorage.setItem('reviewCount-ls', reviewCount);
+            window.location.href = 'review.html';
         });
     }
 
@@ -69,20 +71,13 @@ document.addEventListener('DOMContentLoaded', () => {
     if (reviewShowElm) {
         reviewShowElm.textContent = `Number of reviews submitted: ${reviewCount}`;
     }
-    
-    const currentPage = window.location.pathname.split('/').pop();
-    if (currentPage === "review.html") {
-        reviewCount++;
-        localStorage.setItem('reviewCount-ls', reviewCount);
-        console.log(`You have submitted ${reviewCount} reviews.`);
-    }
 
-    const completedShowElm = document.getElementById('completed');
+    const completedShowElm = document.getElementById('review-completed');
     if (completedShowElm) {
         completedShowElm.textContent = reviewCount;
     }
 
-    const reviewDisplayElm = document.getElementById('review');
+    const reviewDisplayElm = document.getElementById('review-submitted');
     if (reviewDisplayElm) {
         reviewDisplayElm.textContent = reviewCount;
     }

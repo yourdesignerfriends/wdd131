@@ -70,11 +70,20 @@ document.addEventListener('DOMContentLoaded', () => {
         reviewShowElm.textContent = `Number of reviews submitted: ${reviewCount}`;
     }
     
-    // Increment counter in review.html
     const currentPage = window.location.pathname.split('/').pop();
     if (currentPage === "review.html") {
         reviewCount++;
         localStorage.setItem('reviewCount-ls', reviewCount);
         console.log(`You have submitted ${reviewCount} reviews.`);
+    }
+
+    const completedShowElm = document.getElementById('completed');
+    if (completedShowElm) {
+        completedShowElm.textContent = reviewCount;
+    }
+
+    const reviewDisplayElm = document.getElementById('review');
+    if (reviewDisplayElm) {
+        reviewDisplayElm.textContent = reviewCount;
     }
 });

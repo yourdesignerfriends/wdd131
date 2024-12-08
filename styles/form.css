@@ -27,11 +27,12 @@ label {
     display: block;
     margin-top: 5px;
 }
-select, input[type="date"], textarea {
+select, input[type="date"], textarea, input[type="text"] {
     width: 100%;
     color: var(--accent1-color);
     border: 1px solid var(--accent1-color);
     margin-bottom: 10px;
+    margin-top: 5px;
     border-radius: 4px;
     padding: 5px;
 }
@@ -45,12 +46,6 @@ select, input[type="date"], textarea {
 #useful-features {
     margin-bottom: 20px;
 }
-
-#useful-features label {
-    display: block;
-    margin-bottom: 5px;
-}
-
 #useful-features input[type="checkbox"] {
     margin-right: 10px;
 }

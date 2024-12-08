@@ -54,31 +54,22 @@ document.addEventListener('DOMContentLoaded', () => {
         selectElement.appendChild(option);
     });
 
-    // Use localStorage to keep track of the number of reviews
-    let reviewCount = Number(localStorage.getItem('reviewCount-ls')) || 0;
+    const clicks = document.getElementById("clicks")
 
-    const reviewForm = document.querySelector('form');
-    if (reviewForm) {
-        reviewForm.addEventListener('submit', (event) => {
-            event.preventDefault();
-            reviewCount++;
-            localStorage.setItem('reviewCount-ls', reviewCount);
-            window.location.href = 'review.html';
-        });
+    function displayStorage() {
+        const storeClicks = localStorage.getItem("clicks");
+        if (storeClicks)
+            clicks.innerText = storeClicks;
     }
 
-    const reviewShowElm = document.getElementById('review-count');
-    if (reviewShowElm) {
-        reviewShowElm.textContent = `Number of reviews submitted: ${reviewCount}`;
+    function updateStorage() {
+        const storeClicks = parseInt(localStorage.getItem("clicks") ?? 0);
+        localStorage.setItem("clicks", storeClicks + 1);
+        displayStorage();
     }
 
-    const completedShowElm = document.getElementById('review-completed');
-    if (completedShowElm) {
-        completedShowElm.textContent = reviewCount;
-    }
+    document.getElementById("btnUpdate").addEventListener('click',updateStorage)
 
-    const reviewDisplayElm = document.getElementById('review-submitted');
-    if (reviewDisplayElm) {
-        reviewDisplayElm.textContent = reviewCount;
-    }
+    displayStorage();
+    
 });

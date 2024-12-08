@@ -1,4 +1,5 @@
-document.addEventListener('DOMContentLoaded', () => { 
+document.addEventListener('DOMContentLoaded', () => {
+    // Last modified 
     const currentYear = new Date().getFullYear(); 
     const lastModified = document.lastModified; 
     const author = "Analina Del Vecchio Madriz";
@@ -14,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         modifiedElement.textContent = `Last modification: ${lastModified}`; 
         }
     
+    // Product Array
     const products = [
         {
             id: "fc-1888",
@@ -42,6 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     ];
 
+    // Dynamic Options
     const selectElement = document.getElementById('product');
     
     products.forEach(product => {
@@ -50,4 +53,28 @@ document.addEventListener('DOMContentLoaded', () => {
         option.textContent = `${product.name} (Rating: ${product.averagerating})`;
         selectElement.appendChild(option);
     });
+
+    // Use localStorage to keep track of the number of reviews
+    let reviewCount = Number(localStorage.getItem('reviewCount-ls')) || 0;
+
+    const reviewForm = document.querySelector('form');
+    if (reviewForm) {
+        reviewForm.addEventListener('submit', () => {
+            reviewCount++;
+            localStorage.setItem('reviewCount-ls', reviewCount);
+        });
+    }
+
+    const reviewShowElm = document.getElementById('review-count');
+    if (reviewShowElm) {
+        reviewShowElm.textContent = `Number of reviews submitted: ${reviewCount}`;
+    }
+    
+    // Increment counter in review.html
+    const currentPage = window.location.pathname.split('/').pop();
+    if (currentPage === "review.html") {
+        reviewCount++;
+        localStorage.setItem('reviewCount-ls', reviewCount);
+        console.log(`You have submitted ${reviewCount} reviews.`);
+    }
 });

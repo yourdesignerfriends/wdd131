@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Product Review Form</title>
+    <meta name="description" content="Product review form page that uses JavaScript to respond to events and modify HTML dynamically">
+    <meta name="author" content="Analina Del Vecchio Madriz">
+    <meta name="keywords" content="web programming, JavaScript resources, BYU Idaho, programming language, beginner JavaScript, responsive web pages, frontend development">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript> 
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
+    </noscript>
+    <link rel="stylesheet" href="styles/review.css">
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <section class="thanks">
+            <label class="thanks-header">Review Received</label>
+            <div class="thanks-body">
+                <p>
+                    Thanks for that review. 🙏 <br><br>
+                    <small id="review-count"></small> <br>
+                    <small>Your Satisfaction is Our Priority</small>  
+                </p>
+            </div>
+            <div class="thanks-footer">
+                <a href="form.html">
+                    <button>Make Another Review</button>
+                </a>
+            </div>
+        </section>
+        <section class="summary">
+            <label>Thank you for submitting a review!</label>
+            <p>Reviews Submitted: <span id="review"></span></p>
+            <p>Reviews Completed: <span id="completed"></span></p>
+            <a href="form.html">Return to main review page</a>
+        </section>
+    </main>
+    <footer>
+        <p id="copyright"></p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/form.js" defer></script>
+</body>
+</html>

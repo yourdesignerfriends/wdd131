@@ -33,7 +33,6 @@ select, input[type="date"] {
     border: 1px solid var(--accent1-color);
     margin-bottom: 10px;
     border-radius: 4px;
-    appearance: none;
 }
 /* Rating stars */
 .rating {

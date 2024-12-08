@@ -62,11 +62,12 @@ button {
 
 button:hover {
     background-color: var(--accent1-color);
+    color: var(--accent2-color);
 }
 
 .summary p {
     font-size: 1rem;
-    color: var(--accent2-color);
+    color: var(--accent1-color);
 }
 
 .summary a {

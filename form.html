@@ -20,11 +20,14 @@
         <h1>Product Review</h1>
     </header>
     <main>
+        <!-- Form -->
         <form method="get" action="review.html">
+            <!-- Product Name -->
             <label for="product">Product Name</label>
-            <select name="product" id="product" required>
+            <select name="product" id="product" required autocomplete="off">
                 <option value="" disabled selected>Choose a product...</option>
             </select>
+            <!-- Overall Rating -->
             <label>Overall Rating</label>
             <div class="rating">
                 <label for="star1">&#9733;<br><input type="radio" id="star1" name="rating" value="1" required></label>
@@ -33,36 +36,30 @@
                 <label for="star4">&#9733;&#9733;&#9733;&#9733;<br><input type="radio" id="star4" name="rating" value="4" required></label>
                 <label for="star5">&#9733;&#9733;&#9733;&#9733;&#9733;<br><input type="radio" id="star5" name="rating" value="5" required></label>
             </div>
+            <!-- Date of Installation -->
             <label for="installation-date">Date of Installation</label>
-            <input type="date" id="installation-date" name="installation-date" required>
+            <input type="date" id="installation-date" name="installation-date" required autocomplete="off">
+            <!-- Useful Features -->
             <label>Which features did you find useful in the product?</label> 
             <small>(Check all that apply)</small>
-            <div id="useful-features"></div>
-                <label for="feature1">
-                    <input type="checkbox" id="feature1" name="useful-features" value="feature1">
-                    Durability
-                </label>
-                <label for="feature2">
-                    <input type="checkbox" id="feature2" name="useful-features" value="feature2">
-                    Ease of Use
-                </label>
-                <label for="feature3">
-                    <input type="checkbox" id="feature3" name="useful-features" value="feature3">
-                    Performance
-                </label>
-                <label for="feature4">
-                    <input type="checkbox" id="feature4" name="useful-features" value="feature4">
-                    Design
-                </label>
-                <label for="review-text">Written Review</label>
-                <small>(Optional)</small>
-                <textarea id="review-text" name="review" rows="4" cols="50" placeholder="Write your review here..."></textarea>
-                <label for="username">Your Name</label>
-                <small>(Optional)</small>
-                <input type="text" id="username" name="username" placeholder="Enter your name here...">
-                <input type="submit" value="Post Review">
+            <div id="useful-features">
+                <label for="feature1"><input type="checkbox" id="feature1" name="useful-features" value="feature1" autocomplete="off"> Durability</label>
+                <label for="feature2"><input type="checkbox" id="feature2" name="useful-features" value="feature2" autocomplete="off"> Ease of Use</label>
+                <label for="feature3"><input type="checkbox" id="feature3" name="useful-features" value="feature3" autocomplete="off"> Performance</label>
+                <label for="feature4"><input type="checkbox" id="feature4" name="useful-features" value="feature4" autocomplete="off"> Design</label>
+            </div>
+            <!-- Written Review -->
+            <label for="review-text">Written Review</label>
+            <small>(Optional)</small>
+            <textarea id="review-text" name="review" rows="4" cols="50" placeholder="Write your review here..." autocomplete="off"></textarea>
+            <!-- User Name -->
+            <label for="username">Your Name</label>
+            <small>(Optional)</small>
+            <input type="text" id="username" name="username" placeholder="Enter your name here..." autocomplete="name">
+            <!-- Form Submission Button -->
+            <input type="submit" value="Post Review">
         </form>
-    </main>
+    </main>    
     <footer>
         <p id="copyright"></p>
         <p id="lastModified"></p>

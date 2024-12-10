@@ -53,24 +53,5 @@ document.addEventListener('DOMContentLoaded', () => {
         option.textContent = `${product.name} (Rating: ${product.averagerating})`;
         selectElement.appendChild(option);
     });
-
-    // Count Reviews
-    const clicks = document.getElementById("clicks")
-
-    function displayStorage() {
-        const storeClicks = localStorage.getItem("clicks");
-        if (storeClicks)
-            clicks.innerText = storeClicks;
-    }
-
-    function updateStorage() {
-        const storeClicks = parseInt(localStorage.getItem("clicks") ?? 0);
-        localStorage.setItem("clicks", storeClicks + 1);
-        displayStorage();
-    }
-
-    document.getElementById("btnUpdate").addEventListener('click',updateStorage)
-
-    displayStorage();
-    
+  
 });

@@ -15,7 +15,6 @@
 body {
     max-width: 500px;
     font-family: 'Lato', sans-serif;
-    margin: 0 auto;
 }
 /* Header and Footer */
 header, footer {
@@ -24,14 +23,14 @@ header, footer {
     color: var(--accent2-color);
     padding: 0.6rem;
 }
-.thanks-container, .reset-container {
+.container {
     background-color: var(--primary-color);
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    margin: 20px auto;
-    max-width: 500px;
+    margin: 10px;
     text-align: center;
+    line-height: 2;
 }
 button {
     background-color: var(--secondary-color);

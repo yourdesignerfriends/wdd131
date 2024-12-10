@@ -24,7 +24,7 @@
         <form method="get" action="review.html">
             <!-- Product Name -->
             <label for="product">Product Name</label>
-            <select name="product" id="product" required autocomplete="off">
+            <select name="product" id="product" required>
                 <option value="" disabled selected>Choose a product...</option>
             </select>
             <!-- Overall Rating -->
@@ -38,24 +38,24 @@
             </div>
             <!-- Date of Installation -->
             <label for="installation-date">Date of Installation</label>
-            <input type="date" id="installation-date" name="installation-date" required autocomplete="off">
+            <input type="date" id="installation-date" name="installation-date">
             <!-- Useful Features -->
             <label>Which features did you find useful in the product?</label> 
             <small>(Check all that apply)</small>
             <div id="useful-features">
-                <label for="feature1"><input type="checkbox" id="feature1" name="useful-features" value="feature1" autocomplete="off"> Durability</label>
-                <label for="feature2"><input type="checkbox" id="feature2" name="useful-features" value="feature2" autocomplete="off"> Ease of Use</label>
-                <label for="feature3"><input type="checkbox" id="feature3" name="useful-features" value="feature3" autocomplete="off"> Performance</label>
-                <label for="feature4"><input type="checkbox" id="feature4" name="useful-features" value="feature4" autocomplete="off"> Design</label>
+                <label for="feature1"><input type="checkbox" id="feature1" name="useful-features" value="feature1"> Durability</label>
+                <label for="feature2"><input type="checkbox" id="feature2" name="useful-features" value="feature2"> Ease of Use</label>
+                <label for="feature3"><input type="checkbox" id="feature3" name="useful-features" value="feature3"> Performance</label>
+                <label for="feature4"><input type="checkbox" id="feature4" name="useful-features" value="feature4"> Design</label>
             </div>
             <!-- Written Review -->
             <label for="review-text">Written Review</label>
             <small>(Optional)</small>
-            <textarea id="review-text" name="review" rows="4" cols="50" placeholder="Write your review here..." autocomplete="off"></textarea>
+            <textarea id="review-text" name="review" rows="4" cols="50" placeholder="Write your review here..."></textarea>
             <!-- User Name -->
             <label for="username">Your Name</label>
             <small>(Optional)</small>
-            <input type="text" id="username" name="username" placeholder="Enter your name here..." autocomplete="name">
+            <input type="text" id="username" name="username" placeholder="Enter your name here...">
             <!-- Form Submission Button -->
             <input type="submit" value="Post Review">
         </form>

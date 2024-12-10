@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (modifiedElement) { 
         modifiedElement.textContent = `Last modification: ${lastModified}`; 
         }
-    
     // Product Array
     const products = [
         {
@@ -43,7 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
             averagerating: 5.0
         }
     ];
-
     // Dynamic Options
     const selectElement = document.getElementById('product');
     
@@ -52,6 +50,5 @@ document.addEventListener('DOMContentLoaded', () => {
         option.value = product.name;
         option.textContent = `${product.name} (Rating: ${product.averagerating})`;
         selectElement.appendChild(option);
-    });
-  
+    }); 
 });

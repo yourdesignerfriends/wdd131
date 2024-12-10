@@ -24,7 +24,7 @@ header, footer {
     color: var(--accent2-color);
     padding: 0.6rem;
 }
-.thanks, .summary {
+.thanks-container, .reset-container {
     background-color: var(--primary-color);
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -33,22 +33,6 @@ header, footer {
     max-width: 500px;
     text-align: left;
 }
-
-.thanks-header {
-    font-size: 1.5rem;
-    color: var(--accent1-color);
-    display: block;
-    margin-bottom: 10px;
-}
-
-.thanks-body {
-    margin: 20px 0;
-}
-
-.thanks-footer {
-    text-align: center;
-}
-
 button {
     background-color: var(--secondary-color);
     color: var(--accent1-color);
@@ -62,9 +46,4 @@ button {
 button:hover {
     background-color: var(--accent1-color);
     color: var(--accent2-color);
-}
-
-.summary p {
-    font-size: 1rem;
-    color: var(--accent1-color);
 }

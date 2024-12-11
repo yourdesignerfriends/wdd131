@@ -1,0 +1,16 @@
+@media screen and (min-width: 500px) {
+    header {
+        display: flex;
+    }
+    /* hamburger menu button Hidden */
+    #menu {
+		display: none;
+	}
+    /* Navigation */
+	.navigation {
+		flex-direction: row;
+	}
+	.navigation a {
+		display: block;
+	}
+}

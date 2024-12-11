@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+:root {
+    /* Color Palette from https://coolors.co/000000-ffffff-5c75ca-f3c16b */
+    --primary-color: #ffffff;
+    --secondary-color: #000000;
+    --accent1-color: #5c75ca;
+    --accent2-color: #f3c16b;
+    /* Fonts */
+    --font-primary: 'Oswald', sans-serif; 
+    --font-secondary: 'Open Sans', sans-serif;
+}
+* {
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* Body */
+body {
+    font-family: var(--font-secondary);
+    max-width: 1200px;
+    background-image: repeating-linear-gradient(
+        90deg, 
+        var(--secondary-color) 0%, 
+        var(--secondary-color) 50%, 
+        var(--accent2-color) 50%, 
+        var(--accent2-color) 100%
+    );
+}
+/* Footer */
+footer {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 0.6rem;
+    margin: 5px;
+}

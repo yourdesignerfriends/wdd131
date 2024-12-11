@@ -27,7 +27,6 @@ header {
 /* Body */
 body {
     font-family: var(--font-secondary);
-    max-width: 1200px;
     background-image: repeating-linear-gradient(
         90deg, 
         var(--secondary-color) 0%, 

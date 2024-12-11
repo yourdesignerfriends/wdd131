@@ -40,7 +40,6 @@ body {
 .navigation {
 	display: flex;
 	flex-direction: column;
-    padding: 2rem;
     text-align: center;
 }
 .navigation a {

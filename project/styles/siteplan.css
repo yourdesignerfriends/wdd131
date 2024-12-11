@@ -142,11 +142,12 @@ nav a {
     border: 1px solid var(--primary-color);
     text-align: center;
     color: var(--primary-color);
+    font-weight: bold;
 }
 nav a:hover {
     color: var(--secondary-color);
-    background-color: var(--primary-color);
-    border: 1px solid var(--secondary-color);
+    border: 3px solid var(--secondary-color);
+    background-color: var(--accent2-color);
 }
 /* Image */
 img {

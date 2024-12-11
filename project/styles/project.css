@@ -29,7 +29,7 @@ body {
 header h1, header p {
     font-family: var(--font-primary);
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 header {
     background-color: var(--primary-color);

@@ -14,6 +14,9 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+#current-page {
+    margin: 15px;
+}
 header h1, header p {
     font-family: var(--font-primary);
     text-transform: uppercase;
@@ -21,8 +24,8 @@ header h1, header p {
 header {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    padding: 0.6rem;
-    margin: 3px;
+    padding: 10px;
+    margin: 10px;
 }
 /* Body */
 body {
@@ -44,7 +47,8 @@ body {
 .navigation a {
 	display: none;
     flex: 1 1 100%;
-	padding: 20px;
+	padding: 10px;
+    margin: 10px;
 	text-decoration: none;
     color: var(--secondary-color);
     font-weight: 700;

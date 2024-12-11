@@ -1,11 +1,12 @@
 @media screen and (min-width: 500px) {
+    /* Body */
     body {
         max-width: 1200px;
     }
     header h1, header p {
         text-align: center;
     }
-    /* hamburger menu button Hidden */
+    /* hamburger menu */
     #menu {
 		display: none;
 	}

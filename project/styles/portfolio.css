@@ -69,8 +69,8 @@ body {
 }
 /* hamburger menu button */
 #menu {
-    color: var(--primary-color);
-    padding: 0px;
+    border: 3px solid var(--secondary-color);
+    color: var(--secondary-color);
     width: 40px;
     height: 40px;
     font-size: 1.5rem;
@@ -81,8 +81,7 @@ body {
 	top: 1rem;
 	right: 1rem;
     transition: all 0.3s ease;
-    background-color: var(--secondary-color);
-    border: none;
+    background-color: var(--accent2-color);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 #menu:hover {

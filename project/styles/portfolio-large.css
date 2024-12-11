@@ -14,6 +14,6 @@
 		flex-direction: row;
 	}
 	.navigation a {
-        display: flex;
+        display: block;
 	}
 }

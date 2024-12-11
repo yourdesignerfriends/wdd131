@@ -141,8 +141,6 @@ nav a {
     width: 100%;
     border: 1px solid var(--primary-color);
     text-align: center;
-}
-nav a {
     color: var(--primary-color);
 }
 nav a:hover {

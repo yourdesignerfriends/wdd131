@@ -54,11 +54,13 @@ body {
     border: 1px solid var(--primary-color);
     color: var(--primary-color);
     text-align: center;
+    font-weight: bold;
 }
 .navigation a:hover {
-	background-color: var(--primary-color);
 	color: var(--secondary-color);
-    border: 1px solid var(--secondary-color);
+    border: 3px solid var(--secondary-color);
+    font-weight: bold;
+    background-color: var(--accent2-color);
 }
 .navigation.open a {
     display: block;
@@ -70,18 +72,18 @@ body {
 /* hamburger menu button */
 #menu {
     border: 3px solid var(--secondary-color);
+    font-weight: bold;
+    background-color: var(--accent2-color);
     color: var(--secondary-color);
     width: 40px;
     height: 40px;
     font-size: 1.5rem;
-	font-weight: bold;
     cursor: pointer;
     justify-content: center;
 	position: absolute;
 	top: 0.5rem;
 	right: 0.5rem;
     transition: all 0.3s ease;
-    background-color: var(--accent2-color);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 #menu:hover {
@@ -100,4 +102,5 @@ footer {
     color: var(--secondary-color);
     padding: 10px;
     margin: 3px;
+    font-weight: bold;
 }

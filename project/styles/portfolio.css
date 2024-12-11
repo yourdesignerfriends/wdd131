@@ -78,8 +78,8 @@ body {
     cursor: pointer;
     justify-content: center;
 	position: absolute;
-	top: 1rem;
-	right: 1rem;
+	top: 0.5rem;
+	right: 0.5rem;
     transition: all 0.3s ease;
     background-color: var(--accent2-color);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

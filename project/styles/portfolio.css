@@ -43,12 +43,14 @@ body {
 }
 .navigation a {
 	display: none;
+    flex: 1 1 100%;
 	padding: 20px;
 	text-decoration: none;
     color: var(--secondary-color);
     font-weight: 700;
     background-color: var(--primary-color);
     border-radius: 5px;
+    justify-content: center;
 }
 .navigation a:hover {
 	background-color: var(--secondary-color);

@@ -118,7 +118,6 @@ footer {
     margin: 10px;
     border: 3px solid var(--secondary-color);
 }
-
 .project-card a {
     text-align: center;
     text-transform: uppercase;
@@ -143,4 +142,8 @@ img {
     padding: 10px;
     margin-top: 10px;
     box-shadow: 0 2px 4px var(--accent1-color);
+}
+.sub-heading {
+    text-align: center;
+    text-transform: uppercase;
 }

@@ -97,12 +97,6 @@ header {
 #menu.open::before {
 	content: "X";
 }
-/* Main */
-main {
-    background-color: var(--primary-color);
-    padding: 10px;
-    margin: 3px;
-}
 /* Footer */
 footer {
     text-align: center;
@@ -115,8 +109,8 @@ footer {
 /*----------------- Index.html -----------------*/
 .project-card {
     padding: 10px;
-    margin: 10px;
-    border: 3px solid var(--secondary-color);
+    background-color: var(--primary-color);
+    margin: 3px;
 }
 .project-card a {
     text-align: center;
@@ -146,9 +140,11 @@ footer {
 .sub-heading {
     text-align: center;
     text-transform: uppercase;
+    padding: 10px;
+    background-color: var(--primary-color);
+    margin: 3px;
 }
 .analina img {
     width: 40%;
-    padding: 10px;
     display: block;
 }

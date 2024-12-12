@@ -113,31 +113,26 @@ footer {
     font-weight: bold;
 }
 /*----------------- Index.html -----------------*/
-/* Project Container */
-.project-container {
-    padding: 10px;
-}
-/* project Card */
 .project-card {
     padding: 10px;
+    margin: 10px;
+    border: 3px solid var(--secondary-color);
 }
+
 .project-card a {
     text-align: center;
     text-transform: uppercase;
     border: 3px solid var(--secondary-color);
     text-decoration: none;
-    color: var(--secondary-color);
     padding: 10px;
     display: block;
     margin: 10px;
-}
-.project-card {
-    text-align: center;
-    padding: 10px;
+    color: var(--secondary-color);
+    background-color: var(--accent2-color);
 }
 .project-card a:hover {
     color: var(--secondary-color);
-    background-color: var(--accent2-color);
+    background-color: var(--primary-color);
 }
 .project-card p {
     margin: 10px;

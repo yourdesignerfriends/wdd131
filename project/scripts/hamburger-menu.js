@@ -5,10 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     menuLinks.forEach(link => {
         link.addEventListener('click', (event) => {
-            event.preventDefault();
             const filter = event.target.textContent.toLowerCase();
             mainHeading.textContent = event.target.textContent;
-            filterTemples(filter);
         });
     });
     // Hamburger menu button

@@ -145,6 +145,10 @@ footer {
     background-color: var(--primary-color);
     margin: 3px;
 }
+.project-container {
+    background-color: var(--primary-color);
+    margin: 3px;
+}
 /*----------------- about-me.html -----------------*/
 .analina img {
     width: 40%;

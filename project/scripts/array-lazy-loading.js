@@ -46,5 +46,15 @@ document.addEventListener('DOMContentLoaded', () => {
         return card;
     }
 
+    // Function to display project cards
+    function displayProjects(projects) {
+        const projectContainer = document.querySelector(".project-container");
+        projectContainer.innerHTML = '';
+        projects.forEach(project => {
+            projectContainer.appendChild(createProjectCard(project));
+        });
+    }
 
+    // Display the projects
+    displayProjects(projects);
 });

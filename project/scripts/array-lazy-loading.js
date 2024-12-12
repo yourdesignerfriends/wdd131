@@ -32,8 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
         let description = document.createElement("p");
         let img = document.createElement("img");
 
-        year.innerHTML = `<span class="label">Year of Creation:</span> ${project.yearOfCreation}`;
-        description.innerHTML = `<span class="label">Description:</span> ${project.projectDescription}`;
+        year.innerHTML = `<strong>Year of Creation:</strong> ${project.yearOfCreation}`;
+        description.innerHTML = `<strong>Description:</strong> ${project.projectDescription}`;
         img.setAttribute("src", project.imageUrl);
         img.setAttribute("alt", `${project.projectName} Image`);
         img.setAttribute("loading", "lazy");

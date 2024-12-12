@@ -25,4 +25,14 @@ document.addEventListener('DOMContentLoaded', () => {
         let link = document.createElement("a");
         link.setAttribute("href", project.link);
         link.setAttribute("target", "_blank");
+        link.textContent = project.projectName;
+        name.appendChild(link);
+
+        let year = document.createElement("p");
+        let description = document.createElement("p");
+        let img = document.createElement("img");
+
+        year.innerHTML = `<span class="label">Year of Creation:</span> ${project.yearOfCreation}`;
+        
+
 });

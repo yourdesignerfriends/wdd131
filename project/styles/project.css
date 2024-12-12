@@ -137,7 +137,7 @@ footer {
     margin: 10px;
 }
 /* Image */
-img {
+.project-card img {
     width: 100%;
     padding: 10px;
     margin-top: 10px;
@@ -146,4 +146,9 @@ img {
 .sub-heading {
     text-align: center;
     text-transform: uppercase;
+}
+.analina img {
+    width: 40%;
+    padding: 10px;
+    display: block;
 }

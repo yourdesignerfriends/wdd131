@@ -33,6 +33,18 @@ document.addEventListener('DOMContentLoaded', () => {
         let img = document.createElement("img");
 
         year.innerHTML = `<span class="label">Year of Creation:</span> ${project.yearOfCreation}`;
-        
+        description.innerHTML = `<span class="label">Description:</span> ${project.projectDescription}`;
+        img.setAttribute("src", project.imageUrl);
+        img.setAttribute("alt", `${project.projectName} Image`);
+        img.setAttribute("loading", "lazy");
+
+        card.appendChild(name);
+        card.appendChild(year);
+        card.appendChild(description);
+        card.appendChild(img);
+
+        return card;
+    }
+
 
 });

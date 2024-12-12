@@ -48,9 +48,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to display project cards
     function displayProjects(projects) {
-        const mainContainer = document.querySelector("main");
+        const projectContainer = document.querySelector(".project-container");
+        projectContainer.innerHTML = '';
         projects.forEach(project => {
-            mainContainer.appendChild(createProjectCard(project));
+            projectContainer.appendChild(createProjectCard(project));
         });
     }
 

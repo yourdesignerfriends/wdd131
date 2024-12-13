@@ -43,14 +43,14 @@ document.addEventListener('DOMContentLoaded', () => {
             yearOfCreation: "2024",
             projectDescription: "Local online store based in USA where home decoration products are sold.",
             imageUrl: "images/tribal-woven-baskets.webp",
-            link: "https://yourdesignerfriends.com/",
+            link: "https://www.tribalwovenbaskets.com/",
         }, 
         {
             projectName: "Your Designer Friends",
             yearOfCreation: "2021",
             projectDescription: "Company dedicated to providing brand design, tutoring and software development services.",
             imageUrl: "images/your-designer-friends.webp",
-            link: "https://www.tribalwovenbaskets.com/",
+            link: "https://yourdesignerfriends.com/",
         },  
     ];
     // Function to create project cards

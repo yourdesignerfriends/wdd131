@@ -106,6 +106,14 @@ footer {
     margin: 3px;
     font-weight: bold;
 }
+/* Heading h2 */
+.sub-heading {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    background-color: var(--primary-color);
+    margin: 3px;
+}
 /*----------------- index.html -----------------*/
 .project-card {
     max-width: 300px;
@@ -123,14 +131,6 @@ footer {
     color: var(--secondary-color);
     background-color: var(--accent2-color);
 }
-.project-container{
-    padding: 10px;
-    margin: 3px;
-    background-color: var(--primary-color);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
 .project-card a:hover {
     color: var(--secondary-color);
     background-color: var(--primary-color);
@@ -138,7 +138,6 @@ footer {
 .project-card p {
     margin: 10px;
 }
-/* Image */
 .project-card img {
     width: 100%;
     height: auto;
@@ -146,12 +145,13 @@ footer {
     max-width: 280px;
     padding: 5px;
 }
-.sub-heading {
-    text-align: center;
-    text-transform: uppercase;
+.project-container{
     padding: 10px;
-    background-color: var(--primary-color);
     margin: 3px;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 /*----------------- about-me.html -----------------*/
 .analina-img {
@@ -241,10 +241,10 @@ footer {
     margin-top: 15px;
     font-style: italic;
 }
-/* contact */
+/* -------------- get-in-touch.html -------------- */
 form {
     background-color: var(--primary-color);
-    padding: 20px;
+    padding: 10px;
     margin: 3px;
 }
 label {

@@ -5,8 +5,4 @@
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
     }
-    .skills-card ul li {
-        flex: 1 1 22%; 
-        max-width: 22%;
-    }
 }

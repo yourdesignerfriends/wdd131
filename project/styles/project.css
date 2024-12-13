@@ -208,3 +208,14 @@ footer {
     flex: 1 1 45%; 
     max-width: 45%;
 }
+.card h3 {
+    text-align: center;
+    text-transform: uppercase;
+    border: 3px solid var(--secondary-color);
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    margin: 10px;
+    color: var(--secondary-color);
+    background-color: var(--accent2-color);
+}

@@ -196,3 +196,15 @@ footer {
 .card ul li {
     padding: 5px 0;
 }
+/* skills */
+.skills-card ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espacio entre elementos */
+    justify-content: space-between; 
+}
+
+.skills-card ul li {
+    flex: 1 1 45%; 
+    max-width: 45%;
+}

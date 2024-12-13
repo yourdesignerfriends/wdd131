@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
         img.setAttribute("alt", `${project.projectName} Image`);
         img.setAttribute("loading", "lazy");
         img.setAttribute("width", "280");
-        img.setAttribute("height", "316");
+        img.setAttribute("height", "262");
 
         card.appendChild(name);
         card.appendChild(year);

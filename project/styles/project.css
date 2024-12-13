@@ -204,6 +204,10 @@ footer {
     justify-content: space-between; 
 }
 
+.work-experience-card ul, .education-card ul {
+    margin: 20px;
+}
+
 .skills-card ul li {
     flex: 1 1 45%; 
     max-width: 45%;

@@ -55,10 +55,16 @@ document.addEventListener('DOMContentLoaded', () => {
     function createCard(card) {
         const cardElement = document.createElement('div');
         cardElement.classList.add('card');
+        card.content = addBullets(card.content);
+
         if (card.title.includes('Skills')) {
-            card.content = addBullets(card.content);
             cardElement.classList.add('skills-card');
+        } else if (card.title.includes('Work Experience')) {
+            cardElement.classList.add('work-experience-card');
+        } else if (card.title.includes('Education')) {
+            cardElement.classList.add('education-card');
         }
+
         const cardTitle = document.createElement('h3');
         cardTitle.textContent = card.title;
         cardElement.appendChild(cardTitle);

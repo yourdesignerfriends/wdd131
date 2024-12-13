@@ -26,9 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             title: 'Work Experience',
+            subtitle: 'Co-Founder - Your Designer Friends Olympia, WA - Oct. 2019 - Present',
             content: [
-                'Co-Founder Oct. 2019 - Present',
-                'Your Designer Friends Olympia, WA',
                 'Led website and mobile app development, achieving high customer satisfaction and repeat business',
                 'Collaborated closely with a team of three UX/UI designers and a back-end developer to improve functionality and visual appeal of several websites for local businesses',
                 'Increased website traffic by 70% in 3 months through effective SEO strategies, boosting visibility',

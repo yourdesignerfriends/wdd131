@@ -109,10 +109,8 @@ footer {
 /*----------------- index.html -----------------*/
 .project-card {
     padding: 10px;
-    background-color: var(--primary-color);
     margin: 3px;
     background-color: var(--primary-color);
-    margin: 3px;
 }
 .project-container {
     display: flex;

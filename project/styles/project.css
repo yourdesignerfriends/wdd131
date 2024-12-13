@@ -108,7 +108,7 @@ footer {
 }
 /*----------------- index.html -----------------*/
 .project-card {
-    max-width: 400px;
+    max-width: 300px;
     box-shadow: 0 2px 4px var(--accent1-color);
     margin: 15px;
 }

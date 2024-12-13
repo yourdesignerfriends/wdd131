@@ -20,11 +20,9 @@
     .project-card {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
     }
     .project-container {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
     }
 }

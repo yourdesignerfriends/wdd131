@@ -120,7 +120,7 @@ footer {
     background-color: var(--accent2-color);
 }
 .project-card {
-    max-width: 300px;
+    max-width: 400px;
     box-shadow: 0 2px 4px var(--accent1-color);
     margin: 15px;
 }

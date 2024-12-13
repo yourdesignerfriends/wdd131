@@ -154,7 +154,15 @@ footer {
     margin: 3px;
 }
 /*----------------- about-me.html -----------------*/
-.analina img {
-    width: 40%;
-    display: block;
+.analina-img {
+    max-width: 100%;
+    height: auto;
+}
+.analina-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 10px; 
+    margin: 3px auto; 
+    max-width: 300px; 
 }

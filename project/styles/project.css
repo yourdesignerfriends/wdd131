@@ -162,7 +162,15 @@ footer {
     display: flex;
     justify-content: center; 
     align-items: center;  
-    max-width: 300px; 
+    max-width: 300px;
+    transform: rotate(3deg);
+    background-color: var(--accent2-color);
+    margin: 25px auto;
+    border: 3px solid var(--secondary-color);
+}
+.analina-container:hover {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 .about-me {
     padding: 10px;

@@ -107,7 +107,11 @@ footer {
     font-weight: bold;
 }
 /*----------------- index.html -----------------*/
-
+.project-card {
+    max-width: 400px;
+    box-shadow: 0 2px 4px var(--accent1-color);
+    margin: 15px;
+}
 .project-card a {
     text-align: center;
     text-transform: uppercase;
@@ -118,11 +122,6 @@ footer {
     margin: 10px;
     color: var(--secondary-color);
     background-color: var(--accent2-color);
-}
-.project-card {
-    max-width: 400px;
-    box-shadow: 0 2px 4px var(--accent1-color);
-    margin: 15px;
 }
 .project-container{
     padding: 10px;
@@ -141,8 +140,9 @@ footer {
 }
 /* Image */
 .project-card img {
+    width: 100%;
     padding: 10px;
-    margin: 10px;
+    margin-top: 10px;
 }
 .sub-heading {
     text-align: center;
@@ -153,5 +153,6 @@ footer {
 }
 /*----------------- about-me.html -----------------*/
 .analina img {
+    width: 40%;
     display: block;
 }

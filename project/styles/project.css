@@ -112,6 +112,8 @@ footer {
     background-color: var(--primary-color);
     margin: 3px;
     max-width: 400px;
+    background-color: var(--primary-color);
+    margin: 3px;
 }
 .project-card a {
     text-align: center;
@@ -142,10 +144,6 @@ footer {
     text-align: center;
     text-transform: uppercase;
     padding: 10px;
-    background-color: var(--primary-color);
-    margin: 3px;
-}
-.project-container {
     background-color: var(--primary-color);
     margin: 3px;
 }

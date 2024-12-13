@@ -60,7 +60,9 @@ document.addEventListener('DOMContentLoaded', () => {
     function createCard(card) {
         const cardElement = document.createElement('div');
         cardElement.classList.add('card');
-
+        if (card.isSkills) {
+            cardElement.classList.add('skills-card');
+            }
         const cardTitle = document.createElement('h3');
         cardTitle.textContent = card.title;
         cardElement.appendChild(cardTitle);
@@ -69,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
         card.content.forEach(item => {
             const listItem = document.createElement('li');
             if (card.isSkills) {
-                listItem.innerHTML = `&bull; ${item}`; // Añadir bullet points para Skills
+                listItem.innerHTML = `&bull; ${item}`;
             } else {
                 listItem.textContent = item;
             }

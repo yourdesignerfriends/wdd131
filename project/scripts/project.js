@@ -36,6 +36,14 @@ document.addEventListener('DOMContentLoaded', () => {
         modifiedElement.textContent = `Last modification: ${lastModified}`; 
     } 
 
+    function preloadImage(url) {
+        const link = document.createElement('link');
+        link.rel = 'preload';
+        link.as = 'image';
+        link.href = url;
+        document.head.appendChild(link);
+    }
+
     // Projects Array
     const projects = [
         {
@@ -53,6 +61,10 @@ document.addEventListener('DOMContentLoaded', () => {
             link: "https://yourdesignerfriends.com/",
         },  
     ];
+
+    projects.forEach(project => {
+        preloadImage(project.imageUrl);
+    });
     // Function to create project cards
     function createProjectCard(project) {
         let card = document.createElement("section");

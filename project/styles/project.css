@@ -108,7 +108,9 @@ footer {
 }
 /*----------------- index.html -----------------*/
 .project-card {
-    max-width: 600px;
+    max-width: 300px;
+    box-shadow: 0 2px 4px var(--accent1-color);
+    margin: 15px;
 }
 .project-card a {
     text-align: center;
@@ -125,6 +127,9 @@ footer {
     padding: 10px;
     margin: 3px;
     background-color: var(--primary-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .project-card a:hover {
     color: var(--secondary-color);
@@ -138,7 +143,6 @@ footer {
     width: 100%;
     padding: 10px;
     margin-top: 10px;
-    box-shadow: 0 2px 4px var(--accent1-color);
 }
 .sub-heading {
     text-align: center;

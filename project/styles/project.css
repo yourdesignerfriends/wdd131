@@ -112,10 +112,6 @@ footer {
     margin: 3px;
     background-color: var(--primary-color);
 }
-.project-container {
-    display: flex;
-    flex-direction: column;
-}
 .project-card a {
     text-align: center;
     text-transform: uppercase;

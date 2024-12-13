@@ -17,12 +17,4 @@
 	.navigation a {
         display: block;
 	}
-    .project-card {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .project-container {
-        flex-direction: row;
-    }
 }

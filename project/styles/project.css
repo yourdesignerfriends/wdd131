@@ -127,6 +127,9 @@ footer {
     color: var(--secondary-color);
     background-color: var(--accent2-color);
 }
+.project-card h3 {
+    display: flex;
+}
 .project-card a:hover {
     color: var(--secondary-color);
     background-color: var(--primary-color);

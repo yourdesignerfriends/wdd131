@@ -22,8 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 'Empathy',
                 'Honesty',
                 'Spanish fluent'
-            ],
-            isSkills: true
+            ]
         },
         {
             title: 'Work Experience',
@@ -57,24 +56,31 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     ];
 
+    function addBullets(items) {
+        return items.map(item => `&bull; ${item}`);
+    }
+
     function createCard(card) {
         const cardElement = document.createElement('div');
         cardElement.classList.add('card');
-        if (card.isSkills) {
+        if (card.title.includes('Skills')) {
+            card.content = addBullets(card.content);
             cardElement.classList.add('skills-card');
-            }
+        }
         const cardTitle = document.createElement('h3');
         cardTitle.textContent = card.title;
         cardElement.appendChild(cardTitle);
 
+        if (card.subtitle) {
+            const cardSubtitle = document.createElement('h4');
+            cardSubtitle.textContent = card.subtitle;
+            cardElement.appendChild(cardSubtitle);
+        }
+
         const cardContent = document.createElement('ul');
         card.content.forEach(item => {
             const listItem = document.createElement('li');
-            if (card.isSkills) {
-                listItem.innerHTML = `&bull; ${item}`;
-            } else {
-                listItem.textContent = item;
-            }
+            listItem.innerHTML = item;
             cardContent.appendChild(listItem);
         });
         cardElement.appendChild(cardContent);
@@ -86,4 +92,5 @@ document.addEventListener('DOMContentLoaded', () => {
         resumeContainer.appendChild(createCard(card));
     });
 });
+
 

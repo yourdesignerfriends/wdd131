@@ -200,7 +200,7 @@ footer {
 .skills-card ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px; /* Espacio entre elementos */
+    gap: 10px;
     justify-content: space-between; 
 }
 

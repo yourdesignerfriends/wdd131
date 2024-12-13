@@ -154,6 +154,7 @@ footer {
 }
 /*----------------- about-me.html -----------------*/
 .analina img {
-    width: 100%;
     display: block;
+    width: 380;
+    height: 356;
 }

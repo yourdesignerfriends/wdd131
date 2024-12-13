@@ -50,14 +50,14 @@ document.addEventListener('DOMContentLoaded', () => {
             projectName: "Tribal Woven Baskets",
             yearOfCreation: "2024",
             projectDescription: "Local online store based in USA where home decoration products are sold.",
-            imageUrl: "images/tribal-woven-baskets.webp",
+            imageUrl: "images/tribal.webp",
             link: "https://www.tribalwovenbaskets.com/",
         }, 
         {
             projectName: "Your Designer Friends",
             yearOfCreation: "2021",
             projectDescription: "Company dedicated to providing brand design, tutoring and software development services.",
-            imageUrl: "images/your-designer-friends.webp",
+            imageUrl: "images/designer-friends.webp",
             link: "https://yourdesignerfriends.com/",
         },  
     ];
@@ -86,8 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
         img.setAttribute("src", project.imageUrl);
         img.setAttribute("alt", `${project.projectName} Image`);
         img.setAttribute("loading", "lazy");
-        img.setAttribute("width", "280");
-        img.setAttribute("height", "157");
+
 
         card.appendChild(name);
         card.appendChild(year);

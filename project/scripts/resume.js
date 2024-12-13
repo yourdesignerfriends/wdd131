@@ -37,20 +37,13 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             title: 'Education',
+            subtitle: 'Software Development BS - Brigham Young University - Idaho Rexburg, ID - Anticipated Jun. 2027',
             content: [
-                'Software Development BS Anticipated Jun. 2027',
-                'Brigham Young University - Idaho Rexburg, ID',
                 'Object-oriented programming C# and Python',
                 'JavaScript',
                 'Web design and development principles',
                 'HTML and CSS',
                 'Database Management Systems',
-                'Pathway Connect Certificate Sep. 2023',
-                'BYU - Pathway Worldwide Salt Lake City, UT',
-                'Communication',
-                'Problem solving',
-                'Time and financial management',
-                'Develop personal abilities to add value to workplaces'
             ]
         }
     ];

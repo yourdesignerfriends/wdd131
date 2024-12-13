@@ -251,7 +251,7 @@ label {
     display: block;
     margin-top: 5px;
 }
-select, input[type="date"], textarea, input[type="text"], input[type="submit"] {
+select, input[type="email"], textarea, input[type="text"], input[type="submit"] {
     width: 100%;
     border: 1px solid var(--secondary-color);
     margin-bottom: 10px;

@@ -119,6 +119,11 @@ footer {
     color: var(--secondary-color);
     background-color: var(--accent2-color);
 }
+.project-card {
+    max-width: 300px;
+    box-shadow: 0 2px 4px var(--accent1-color);
+    margin: 15px;
+}
 .project-container{
     padding: 10px;
     margin: 3px;

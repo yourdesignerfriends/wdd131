@@ -26,11 +26,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const author = "Analina Del Vecchio Madriz";
     const place = "Washington, USA";
 
+    const link = "<a href='site-plan.html'>Site Plan</a>";
+
     const copyrightElement = document.getElementById("copyright"); 
     const modifiedElement = document.getElementById("lastModified");
     
     if (copyrightElement) { 
-        copyrightElement.textContent = `\u00A9 ${currentYear} | ${author} | ${place} |`; 
+        copyrightElement.innerHTML = `\u00A9 ${currentYear} | ${author} | ${place} | ${link}`; 
         } 
     if (modifiedElement) { 
         modifiedElement.textContent = `Last modification: ${lastModified}`; 

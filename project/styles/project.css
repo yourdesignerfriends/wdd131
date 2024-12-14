@@ -32,6 +32,14 @@ header h1, header p {
     text-transform: uppercase;
     font-size: 1.5rem;
 }
+/* Heading h2 */
+.sub-heading {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    background-color: var(--primary-color);
+    margin: 3px;
+}
 header {
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -106,14 +114,6 @@ footer {
     margin: 3px;
     font-weight: bold;
 }
-/* Heading h2 */
-.sub-heading {
-    text-align: center;
-    text-transform: uppercase;
-    padding: 10px;
-    background-color: var(--primary-color);
-    margin: 3px;
-}
 /*----------------- index.html -----------------*/
 .project-card {
     max-width: 300px;
@@ -183,7 +183,6 @@ footer {
     margin-top: 15px;
     font-style: italic;
 }
-/* Resume */
 #resume-container {
     background-color: var(--primary-color);
     margin: 3px;
@@ -191,16 +190,13 @@ footer {
 .card {
     padding: 10px;
 }
-
 .card h3 {
     margin-top: 0;
 }
-
 .card ul {
     list-style-type: none;
     padding: 0;
 }
-
 .card ul li {
     padding: 5px 0;
 }
@@ -211,11 +207,9 @@ footer {
     gap: 10px;
     justify-content: space-between; 
 }
-
 .work-experience-card ul, .education-card ul {
     margin: 20px;
 }
-
 .skills-card ul li {
     flex: 1 1 45%; 
     max-width: 45%;
@@ -273,19 +267,16 @@ input[type="submit"]:hover {
     color: var(--secondary-color);
     background-color: var(--primary-color);
 }
-/* confirmation */
-.thanks-container, .reset-container {
+/* -------------- get-in-touch-confirmation.html -------------- */
+.general-container {
     background-color: var(--primary-color);
     margin: 3px;
     text-align: center;
     line-height: 2.5;
     font-weight: bold;
+    padding: 10px;
 }
-.reset-container {
-    margin-top: 20px;
-    text-align: center;
-}
-.button, .reset-counter {
+button {
     background-color: var(--accent2-color);
     border: 3px solid var(--secondary-color);
     color: var(--secondary-color);
@@ -294,7 +285,7 @@ input[type="submit"]:hover {
     text-decoration: none;
     font-weight: bold;
 }
-.button:hover, .reset-counter:hover {
+button:hover {
     color: var(--secondary-color);
     background-color: var(--primary-color);
 }

@@ -276,7 +276,7 @@ input[type="submit"]:hover {
     font-weight: bold;
     padding: 10px;
 }
-button {
+.button {
     background-color: var(--accent2-color);
     border: 3px solid var(--secondary-color);
     color: var(--secondary-color);
@@ -285,7 +285,7 @@ button {
     text-decoration: none;
     font-weight: bold;
 }
-button:hover {
+.button:hover {
     color: var(--secondary-color);
     background-color: var(--primary-color);
 }

@@ -62,7 +62,7 @@ header {
     width: 100%;
 	padding: 10px;
 	text-decoration: none;
-    border: 1px solid var(--primary-color);
+    border: 3px solid var(--primary-color);
     color: var(--primary-color);
     text-align: center;
     font-weight: bold;
@@ -113,6 +113,17 @@ footer {
     padding: 10px;
     margin: 3px;
     font-weight: bold;
+}
+.footer-link {
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    text-decoration: none;
+    background-color: var(--accent2-color);
+    padding: 2px;
+}
+.footer-link:hover {
+    color: var(--primary-color);
+    background-color: var(--secondary-color); 
 }
 /*----------------- index.html -----------------*/
 .project-card {

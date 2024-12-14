@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const author = "Analina Del Vecchio Madriz";
     const place = "Washington, USA";
 
-    const link = "<a href='site-plan.html'>Site Plan</a>";
+    const link = "<a href='site-plan.html' class='footer-link'>Site Plan</a>";
 
     const copyrightElement = document.getElementById("copyright"); 
     const modifiedElement = document.getElementById("lastModified");
